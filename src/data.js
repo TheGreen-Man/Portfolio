@@ -1,5 +1,8 @@
 import { nanoid } from "nanoid";
-import ob from "../src/img/6.jpeg";
+import navbar from "../src/frames/ncr/nav.png";
+import selection from "../src/frames/ncr/selection.png";
+import work from "../src/frames/ncr/work.png";
+import di from "../src/frames/ncr/dispatch.png";
 
 const PROJECTS = [
 	{
@@ -7,20 +10,25 @@ const PROJECTS = [
 		subtitle: "Ticket assistant tool",
 		id: `${nanoid()}`,
 		content: [
+			// {
+			// 	id: `${nanoid()}`,
+			// 	element: "h1",
+			// 	text: "Intro",
+			// },
 			{
 				id: `${nanoid()}`,
 				element: "h1",
-				text: "Intro",
+				text: "Custom made mozilla firefox plugin, created to assist in ticket handeling trough Neos (NCR's Ticket handling tool).",
 			},
+			// {
+			// 	id: `${nanoid()}`,
+			// 	element: "p",
+			// 	text: "Now with that out of the way, let's begin!",
+			// },
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "This is a mozilla firefox plugin, made with raw vanilla js. It is made as a plugin and is uploaded directly from local computer in order to prevent any confidental information leakage. This is also a disclaimer that i will show some of the featuers and how it works.",
-			},
-			{
-				id: `${nanoid()}`,
-				element: "p",
-				text: "Now with that out of the way, let's begin!",
+				text: "Bill Gates once said he will choose a lazy person for a hard job because he will find an easy solution to it. Well, This is my easy solution to repetetivness of tickets",
 			},
 			{
 				id: `${nanoid()}`,
@@ -30,43 +38,56 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "This plugin will remove the main function of clicking on the webpages logo (sending to home page, that is never used and is just a nuisence), and instead it will show a dropdown menu. ",
+				text: "Picture below is showing navigation bar on neos website. This plugin disables main function of clicking on logo, opening home page, and creates something much more out of it.",
 			},
-			{
-				id: `${nanoid()}`,
-				element: "p",
-				text: "Firstly, you would navigate trough the dropdown menu by clicking on its fields, and it will rerender accordingly. Main usage of this is being able to select the correct unit and the exact issue that it is having. There are also some additional features that will be later explained.",
-			},
+
 			{
 				id: `${nanoid()}`,
 				element: "img",
-				src: ob,
+				src: navbar,
 				alt: "alt",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Now that the correct model and issue has been selected, the plugin starts doing it's thing. I won't bore you with the details and will try to explain in short what is happening. We will go step by step:",
+				text: "Clicking will create a dropdown menu. First 2 fields are not clickable, and they are pulling information from auto generated logs trough ReGeX and showing issue information and register model.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "img",
+				src: selection,
+				alt: "alt",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Step 1: Opens KB searcher, selects it, set's its value to [KB+' '] written in POSLOG. My part here is that i need to press backspace (to triger onChange) and enter key, wait for it to search KB, and select the proper one.",
+				text: "The selection of the correct model/issue now begins. In this case, the register is a SelfCheckout (SCO), model is R6L+, issue is with the bill acceptor (GSR50) and a part that needs to be checked with the sc030s05215us is where is the issue located, that is in this case in top module.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Step 2: Exits KB searcher, opens ticket general information field, changes: title, description, product and model. Title and description is the same log written twice, it is dynamically altered, it has '-XX-' in it, where by regex it will replace that with the register number (ex. 01, 99). Same thing goes here as for KB, my part is to click on title and description field and press backspace or space (it will crop excess whitespace automatically on save, just needed to trigger onChange), and product and model are dropdowns on which i don't need to change anything. Click Save button.",
+				text: "As you might have noticed, there are also new fields here, **field is a regular back button, while the ***field is also generated from the information in the ticket, to create a register name that on click gets copied and can be used for easy access to the register via different app",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Step 3+: Now is the part where it writes logs in the ticket. 1st one is always dynamically created by writing name of the person who created the ticket and the issue details, and other logs are written in the POSLOG, depending on the issue, there might be only the first log, or more (up to 3). I do not need to do anything on this part, other then to press the button on the list and it will write and post the log on its own. Fun part about here, since again onChange was not triggered, 'Post' button remains grayed out as if nothing was written on it, but",
+				text: "Once you have selected the exact location of the issue, the real assisting will begin. It will write, change, post, and do much more, but there are things that it can't do, like press enter 😂️ so it was made with checkpoints where it waits for click to continue.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "I would be more than happy to explain and show how everything works in person.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
 				text: "Step 4: There is a choice now, the ticket is either going to be resolved or dispatched. If click on resolved, it prepares everything to resolve the ticket only leaves empty field for the name that i need to fill. If ticket needs to be dispatched, it will write a log and not post it just stay there.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "img",
+				src: work,
+				alt: "alt",
 			},
 			{
 				id: `${nanoid()}`,
@@ -82,6 +103,12 @@ const PROJECTS = [
 				id: `${nanoid()}`,
 				element: "p",
 				text: "Step 4.3: After the task has been dispatched, the SR number will show, it needs to be entered in to the description field, and it needs to be posted as a log. This is exactly what this step does, and once again onChange effect needs to be triggered on description field, and Save button clicked after that. This is it, ticket has been completed!",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "img",
+				src: di,
+				alt: "alt",
 			},
 			{
 				id: `${nanoid()}`,
