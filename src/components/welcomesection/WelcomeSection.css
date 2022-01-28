@@ -1,0 +1,97 @@
+.intro {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.proffesion {
+	display: block;
+	text-align: center;
+	padding-top: 2.5%;
+	color: var(--clr-accent);
+	font-size: var(--text-size-small);
+	text-transform: uppercase;
+}
+.image-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#svg-animation {
+	width: 42%;
+	height: 42%;
+	/*  why 42 you might ask?
+		is it because its
+		the Answer to the Ultimate Question of Life, 
+		the Universe and Everything.
+		or maybe, it is just a 
+		random number	
+	*/
+}
+
+/* #svg-animation path:nth-child(1),
+#svg-animation path:nth-child(2),
+#svg-animation path:nth-child(3),
+#svg-animation path:nth-child(4),
+#svg-animation path:nth-child(5),
+#svg-animation path:nth-child(6),
+#svg-animation path:nth-child(7),
+#svg-animation path:nth-child(8) {
+	animation: filler 2s ease-in forwards 2.1s;
+} */
+
+#svg-animation path:nth-child(9) {
+	stroke-dasharray: 3151.26318359375;
+	stroke-dashoffset: 3151.26318359375;
+	animation: line-animation 2s ease forwards 0.3s;
+}
+#svg-animation path:nth-child(10) {
+	stroke-dasharray: 652.7723999023438;
+	stroke-dashoffset: 652.7723999023438;
+	animation: line-animation 2s ease forwards 0.6s;
+}
+#svg-animation path:nth-child(11) {
+	stroke-dasharray: 1143.056640625;
+	stroke-dashoffset: 1143.056640625;
+	animation: line-animation 2s ease forwards 0.9s;
+}
+#svg-animation path:nth-child(12) {
+	stroke-dasharray: 525.9880981445312;
+	stroke-dashoffset: 525.9880981445312;
+	animation: line-animation 2s ease forwards 1.2s;
+}
+#svg-animation path:nth-child(13) {
+	stroke-dasharray: 667.5111694335938;
+	stroke-dashoffset: 667.5111694335938;
+	animation: line-animation 2s ease forwards 1.5s;
+}
+#svg-animation path:nth-child(14) {
+	stroke-dasharray: 1035.6739501953125;
+	stroke-dashoffset: 1035.6739501953125;
+	animation: line-animation 2s ease forwards 1.8s;
+}
+#svg-animation path:nth-child(15) {
+	stroke-dasharray: 652.7706909179688;
+	stroke-dashoffset: 652.7706909179688;
+	animation: line-animation 2s ease forwards 2.1s;
+}
+
+@keyframes line-animation {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes filler {
+	from {
+		fill: var(--clr-gray);
+	}
+	to {
+		fill: var(--clr-accent);
+	}
+}

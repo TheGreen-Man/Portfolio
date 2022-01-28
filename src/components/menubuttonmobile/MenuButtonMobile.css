@@ -1,0 +1,94 @@
+.menu-button {
+	position: fixed;
+	cursor: pointer;
+	top: 23px;
+	left: 23px;
+	height: 50px;
+	width: 50px;
+	z-index: 22;
+	border-radius: 50%;
+	background: var(--clr-accent);
+	outline: 1px solid var(--clr-gray);
+}
+.bars {
+	position: absolute;
+	top: 47.5%;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+	background: white;
+	width: 50%;
+	height: 3px;
+	transition: background 0.5s;
+}
+.bars::before {
+	content: "";
+	position: absolute;
+	top: 266%;
+	width: 100%;
+	height: 3px;
+	background: white;
+	transition: transform 0.5s, top 0.5s;
+}
+.bars::after {
+	content: "";
+	position: absolute;
+	top: -266%;
+	width: 100%;
+	height: 3px;
+	background: white;
+	transition: transform 0.5s, top 0.5s;
+}
+.ex .bars::before {
+	transform: rotate(45deg);
+	top: 0;
+}
+.ex .bars::after {
+	transform: rotate(135deg);
+	top: 0;
+}
+.ex .bars {
+	background: var(--clr-accent);
+}
+.hidden-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 21;
+	background: white;
+	display: none;
+}
+.show {
+	display: block;
+}
+
+.hidden-menu /*> div.abcd*/ nav.main-nav {
+	position: absolute;
+	top: 35%;
+	bottom: 45%;
+}
+.hidden-menu nav.main-nav ul li {
+	display: block;
+	width: 100vw;
+	margin: 8px 0 35px 0;
+}
+.hidden-menu nav.main-nav ul li a {
+	width: 100%;
+	padding: 10px;
+	font-size: var(--text-size-large);
+}
+.hidden-menu nav.main-nav ul li a::before,
+.hidden-menu nav.main-nav ul li a::after {
+	display: none;
+}
+.hidden-menu nav.main-nav ul li::before {
+	display: none;
+}
+
+@media screen and (min-width: 990px) {
+	.menu-button {
+		display: none;
+	}
+}

@@ -1,0 +1,100 @@
+.circle {
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	border-radius: 50%;
+	/* background-color: var(--clr-accent); */
+	outline: 1px solid var(--clr-gray);
+
+	top: 96px;
+	right: -30px;
+	cursor: pointer;
+	z-index: 1;
+}
+.circle::before,
+.circle::after {
+	content: "";
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	border-radius: 25px 0 0 25px;
+	transform-origin: center right;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+}
+
+.circle::before {
+	z-index: 5;
+	background-color: white;
+	animation-name: mask;
+	animation-timing-function: steps(1);
+}
+
+.circle::after {
+	background-color: var(--clr-accent);
+	animation-name: rotate;
+	animation-timing-function: linear;
+}
+
+/* .lines {
+	position: absolute;
+	top: 47.5%;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+	background: var(--clr-accent);
+	width: 50%;
+	height: 3px;
+	transition: background 0.5s;
+}
+.lines::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	background: white;
+	transform: rotate(45deg);
+}
+.lines::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	background: white;
+	transform: rotate(135deg);
+} */
+
+@media screen and (max-width: 989px) {
+	.circle {
+		position: fixed;
+		top: 23px;
+		right: 23px;
+
+		height: 50px;
+		width: 50px;
+		font-size: 300%;
+		border-radius: 50%;
+
+		outline: 1px solid var(--clr-gray);
+		z-index: 1;
+	}
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes mask {
+	50%,
+	100% {
+		background-color: var(--clr-accent);
+		transform: rotate(0.5turn);
+	}
+}

@@ -1,0 +1,122 @@
+.work-r nav {
+	display: block;
+}
+.project-ul {
+	list-style-type: none;
+}
+.project-ul > li {
+	display: list-item;
+}
+
+.project {
+	min-height: 100vh;
+
+	overflow: hidden;
+	width: 100%;
+	left: 0;
+}
+
+.opo {
+	height: 100vh;
+	position: relative;
+}
+
+.project__header {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.a {
+	background-image: url("../../frames/ncr/ncr.png");
+	background-size: 90% 90%;
+}
+.b {
+	background-image: url("https://picsum.photos/1600/1200");
+}
+.c {
+	background-image: url("https://picsum.photos/1000/1200");
+}
+.project-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	/* background-size: cover; */
+	background-position: center center;
+	-webkit-transition: 8s -webkit-transform linear;
+	transition: 8s transform linear;
+}
+.chapter--expanded .project__header {
+	cursor: default;
+}
+
+.project .project__header:hover .project-image {
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.header-content {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	top: 20%;
+	overflow: hidden;
+}
+
+.project-content {
+	overflow: hidden;
+	position: relative;
+	height: fit-content;
+	background-color: whitesmoke;
+}
+
+.header-title {
+	margin-bottom: 1%;
+	font-size: 1.9em;
+	letter-spacing: 1.5px;
+}
+.header-subtitle {
+	font-size: 1em;
+	letter-spacing: 1.3px;
+}
+
+.header-title,
+.header-subtitle,
+.header-button {
+	line-height: 1.5em;
+	font-weight: 700;
+	text-shadow: 2px 2px var(--clr-accent);
+}
+
+.project-content p {
+	padding: 0 72px 36px 92px;
+	line-height: 1.3em;
+	display: block;
+	margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+	.project-content p {
+		max-width: 85ch;
+	}
+}
+
+.project-content h1,
+.project-content h2,
+.project-content h3 {
+	padding: 10px 72px 20px 72px;
+}
+
+.chapter--expanded .project-ul .project-image {
+	transform: scale(1.3);
+}

@@ -1,0 +1,18 @@
+.project-nav ul li:not(:first-child)::before {
+	content: "/";
+	color: var(--text-clr-gray);
+	padding: 0 4px;
+}
+
+.links {
+	color: var(--text-clr-gray);
+	cursor: pointer;
+}
+.links:hover {
+	color: var(--clr-accent);
+}
+
+.selected {
+	color: var(--clr-accent);
+	cursor: default;
+}

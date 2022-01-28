@@ -1,0 +1,28 @@
+.contact-r {
+	padding: 70px 86px;
+	overflow-y: hidden;
+	min-height: 100vh;
+}
+
+.contact-r p,
+.contact-r h3,
+.contact-r h2 {
+	margin-bottom: 25px;
+}
+
+.icon {
+	font-size: 20px;
+	margin-left: 5px;
+	padding: 2px;
+}
+
+.icon:hover {
+	background-color: black;
+	color: white;
+}
+
+@media screen and (min-width: 1200px) {
+	.icon {
+		font-size: 25px;
+	}
+}
