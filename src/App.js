@@ -10,6 +10,7 @@ import PROJECTS from "./data";
 import MenuButtonMobile from "./components/menubuttonmobile/MenuButtonMobile";
 
 function App() {
+	// SUCK A DICKA
 	if (window.screen.width >= 990) window.addEventListener("scroll", scroll);
 	return (
 		<>
