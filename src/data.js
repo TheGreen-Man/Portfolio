@@ -81,7 +81,7 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Step 4: There is a choice now, the ticket is either going to be resolved or dispatched. If click on resolved, it prepares everything to resolve the ticket only leaves empty field for the name that i need to fill. If ticket needs to be dispatched, it will write a log and not post it just stay there.",
+				text: "Two fields marked with **** are dispatch model of the unit. It is filled automatically when KB is set, but some KB's are not connected with proper model, so these fields are handy to check that and if needed replace.",
 			},
 			{
 				id: `${nanoid()}`,
@@ -92,17 +92,12 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Step 4.1: Dispatch part is separated into 3 clicks. 1st part is that it will post the log that has been previously written (reason why it doesn't do that straight away, ocasionaly the log needs to be changed, so it leaves room for that), create a task, and once it has been created it will enter the task (it does all this with mutation observer).",
+				text: "RR or DI means Remotely Resolved or Dispatch. RR process is really short, so i won't be talking about that one, but DI on the other hand is a bit different. Process goes somewhat like this, first a log needs to be sent, task needs to be created, then dispatched (from inside task itself), and after dispatch has been accepted, a return log will come with a code called SR, last part is taking that SR and add it to the description.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Step 4.2: Now inside the task, it will dispatch the task and once it gets a log that it has been dispatched, it will return back to ticket, again done with mutation observer",
-			},
-			{
-				id: `${nanoid()}`,
-				element: "p",
-				text: "Step 4.3: After the task has been dispatched, the SR number will show, it needs to be entered in to the description field, and it needs to be posted as a log. This is exactly what this step does, and once again onChange effect needs to be triggered on description field, and Save button clicked after that. This is it, ticket has been completed!",
+				text: "Mutation observer really shines here, being able to chain multiple things together, and also some more regex for the SR number search.",
 			},
 			{
 				id: `${nanoid()}`,
@@ -113,12 +108,12 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "h2",
-				text: "Additional features",
+				text: "Closure",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Field marked with red number 1, is converting register.store information (generated in every ticket), something that looks like XX.XXXX.US (can have less digits, like 1.5.US) into something that we are using that needs to be in format sc0XXs0XXXXus (example above would be sc001s00005us), and automaticaly puts it in temporary location (copys it, ready to be pasted).",
+				text: "Even though this project is fully operational, there are always ways to improve. Certain checkers that would remove the need for clicking to continue, some additional features, extreme case scenarios where certain fields in ticket are missing so a field to add that info manually would come handy, etc. can always be added, but i would say that my main goal is to rewrite the whole thing, make it fully automatic, using cypress.",
 			},
 		],
 	},
@@ -138,7 +133,11 @@ const PROJECTS = [
 				text: "Let's talk!",
 			},
 			{
-				// id: `${nanoid()}`,
+				id: `${nanoid()}`,
+				element: "p",
+				text: "different styles",
+			},
+			{
 				id: `${nanoid()}`,
 				element: "p",
 				text: "Unlike my first major project, the raw js plugin, this is something where all my knowledge had to be put together, first actual build of something, incorporating all aspects of web development. HTML, CSS and JS all together.",
@@ -151,14 +150,29 @@ const PROJECTS = [
 		],
 	},
 	{
-		title: "Projekat 3",
-		subtitle: "Subtitle 3",
+		title: "eCommerce",
+		subtitle: "Planner like no other",
 		id: `${nanoid()}`,
 		content: [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dolorum. Totam maiores nisi consequatur voluptatum praesentium in nihil, eaque laudantium.",
+				text: "After finishing this portfolio, realisation that i have learned a lot, and yet still don't know even more has came to my mind and my next course of action will be to make once again a website from scratch. This time it is going to be a production grade eCommerce website.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "Why planner? Friend has a passion for making different styled planners. Everything ranging from proffesional to themed ones, and would like to showcase her work and create a web shop.This is an ideal opportunity for me to gain more expiriance, and for her to not take a financial hit in order to get everything going.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "Goal is pretty simple here. Fully responsive, clean, website on which you should be able to review items, add to card, sign in, or make a purchase as guest. It will also be made using React.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "Since this is a future project that will start as soon as this portfolio is finished, you can watch my progrees on my GitHub account",
 			},
 		],
 	},
