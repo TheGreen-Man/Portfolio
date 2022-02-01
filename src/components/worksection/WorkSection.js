@@ -12,13 +12,12 @@ export default function WorkSection(props) {
 	);
 	const [upDownAnimation, setUpDownAnimation] = useState(Boolean(false));
 
-	const promiseTimer = new Promise((resolve, reject) => {
-		setTimeout(() => {
-			resolve();
-		}, 1500);
-	});
-
 	async function handleClick(e, id) {
+		const promiseTimer = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 1500);
+		});
 		try {
 			e.preventDefault();
 			setLeftRightAnimation(true);
@@ -26,42 +25,42 @@ export default function WorkSection(props) {
 			let section = document.querySelector(".work");
 			let intro = document.querySelector(".intro");
 			let about = document.querySelector(".about");
-			console.log("1");
+			// console.log(section);
 			await promiseTimer;
-			console.log("2");
-
 			setSelectedProject(id);
 			section.classList.add("chapter--expanded");
 			window.scrollTo(0, intro.clientHeight + about.clientHeight);
-
-			// setTimeout(() => {
-			// }, 1000);
-			setTimeout(() => {}, 1001);
 		} catch (err) {
 			alert("error, we are all going to die!");
 		}
 	}
 
-	function handleClose(e) {
-		e.preventDefault();
-		setLeftRightAnimation(false);
-		setUpDownAnimation(false);
-		let section = document.querySelector(".work");
-		// let intro = document.querySelector(".intro");
-		// let about = document.querySelector(".about");
-
-		setTimeout(() => {
+	async function handleClose(e) {
+		let a = document.querySelectorAll(".project-ul li > div");
+		let aa = Object.values(a);
+		let x = aa.findIndex((e) => e.id === selectedProject);
+		const promiseTimer = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 2000);
+		});
+		try {
+			e.preventDefault();
+			setLeftRightAnimation(false);
+			setUpDownAnimation(false);
+			let section = document.querySelector(".work");
+			let intro = document.querySelector(".intro");
+			let about = document.querySelector(".about");
+			await promiseTimer;
 			section.classList.remove("chapter--expanded");
 			setSelectedProject("");
-		}, 2000);
-		// setTimeout(() => {
-		// 	window.scrollTo(
-		// 		0,
-		// 		intro.clientHeight +
-		// 			about.clientHeight +
-		// 			intro.clientHeight
-		// 	);
-		// }, 2001);
+			window.scrollTo(
+				0,
+				intro.clientHeight + about.clientHeight + intro.clientHeight * x
+			);
+		} catch (err) {
+			alert(err);
+		}
 	}
 
 	const leftContainerApi = useSpringRef();
@@ -111,16 +110,25 @@ export default function WorkSection(props) {
 			openProject={selectedProject}
 			next={next}
 			key={e.id + "plkey"}
+			setUpDownAnimation={setUpDownAnimation}
 		/>
 	));
-	function next(id) {
+	async function next(id) {
+		const promiseTimer = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 1500);
+		});
+		const promiseTimer2 = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 2000);
+		});
 		setUpDownAnimation(false);
-		setTimeout(() => {
-			setSelectedProject("");
-		}, 1500);
-		setTimeout(() => {
-			document.getElementById(id + "1").click();
-		}, 2000);
+		await promiseTimer;
+		setSelectedProject("");
+		await promiseTimer2;
+		document.getElementById(id + "1").click();
 	}
 
 	return (

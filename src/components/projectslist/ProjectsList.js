@@ -7,10 +7,25 @@ export default function ProjectsList({
 	selected,
 	openProject,
 	next,
+	setUpDownAnimation,
 }) {
-	function handleClick() {
+	async function handleClick() {
+		const promiseTimer = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 2010);
+		});
+
+		// this if will work if none of the projects are open
 		if (!openProject) document.getElementById(id + "1").click();
-		else next(id);
+		// else works if a project is open and user presses on another project
+		else {
+			document.getElementsByClassName("circle")[0].click();
+			// await promiseTimer;
+			// setUpDownAnimation(false);
+			await promiseTimer;
+			document.getElementById(id + "1").click();
+		}
 	}
 	return (
 		// is in nav.project-nav>ul

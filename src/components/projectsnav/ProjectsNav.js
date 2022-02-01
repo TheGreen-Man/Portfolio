@@ -6,7 +6,6 @@ import "./ProjectsNavExpanded.css";
 import { Link } from "react-scroll";
 import { useSpring, animated, useSpringRef, useChain } from "react-spring";
 import NextButton from "../nextbutton/NextButton";
-// import creator from "../../js/creator";
 
 function ProjectsNav({
 	id,
@@ -43,13 +42,10 @@ function ProjectsNav({
 		else return null;
 	});
 
-	// console.log(open);
-
 	const imageContainerApi = useSpringRef();
 	const imageContainer = useSpring({
 		ref: imageContainerApi,
 		to: { height: !upDown ? "100vh" : "55vh" },
-		// delay: 1500,
 		config: { duration: 500 },
 	});
 
@@ -57,7 +53,6 @@ function ProjectsNav({
 	const infoContainer = useSpring({
 		ref: infoContainerApi,
 		to: { height: !upDown ? "0px" : "100%" },
-		// delay: 1500,
 		config: { duration: !upDown ? 500 : 0 },
 	});
 
@@ -70,7 +65,6 @@ function ProjectsNav({
 	const nextButton = <NextButton onClick={nextButtonClick} />;
 
 	return (
-		// shouldShow && (
 		<li id={shouldShow ? null : "die"}>
 			<div
 				// style={openAnimated}
@@ -107,7 +101,6 @@ function ProjectsNav({
 			</div>
 		</li>
 	);
-	// );
 }
 
 export default ProjectsNav;

@@ -97,6 +97,7 @@
 	line-height: 1.5em;
 	font-weight: 700;
 	text-shadow: 2px 2px var(--clr-accent);
+	color: black;
 }
 
 .project-content p {
