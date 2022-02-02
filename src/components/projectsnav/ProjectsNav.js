@@ -26,7 +26,7 @@ function ProjectsNav({
 	}
 
 	function abc(e) {
-		if (e === 0) return "a";
+		if (e === 0) return "ncr-background";
 		if (e === 1) return "b";
 		if (e === 2) return "c";
 		if (e === 3) return "d";

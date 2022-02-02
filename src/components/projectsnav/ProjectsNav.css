@@ -31,15 +31,14 @@
 	height: 100%;
 }
 
-.a {
-	background-image: url("../../frames/ncr/ncr.png");
-	background-size: 90% 90%;
+.ncr-background {
+	background-image: url("../../frames/ncr/ncr123.jpeg");
 }
 .b {
 	background-image: url("https://picsum.photos/1600/1200");
 }
 .c {
-	background-image: url("https://picsum.photos/1000/1200");
+	background-image: url("../../frames/future.png");
 }
 .project-image {
 	position: absolute;
@@ -50,7 +49,7 @@
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	/* background-size: cover; */
+	background-size: cover;
 	background-position: center center;
 	-webkit-transition: 8s -webkit-transform linear;
 	transition: 8s transform linear;

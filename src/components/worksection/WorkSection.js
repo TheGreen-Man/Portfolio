@@ -25,7 +25,6 @@ export default function WorkSection(props) {
 			let section = document.querySelector(".work");
 			let intro = document.querySelector(".intro");
 			let about = document.querySelector(".about");
-			// console.log(section);
 			await promiseTimer;
 			setSelectedProject(id);
 			section.classList.add("chapter--expanded");
