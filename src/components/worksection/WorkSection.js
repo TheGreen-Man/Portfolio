@@ -111,6 +111,7 @@ export default function WorkSection(props) {
 			next={next}
 			key={e.id + "plkey"}
 			setUpDownAnimation={setUpDownAnimation}
+			setSelectedProject={setSelectedProject}
 		/>
 	));
 	async function next(id) {
