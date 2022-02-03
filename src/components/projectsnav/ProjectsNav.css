@@ -32,7 +32,8 @@
 }
 
 .ncr-background {
-	background-image: url("../../frames/ncr/ncr123.jpeg");
+	background-image: url("../../frames/ncr/ncr123.png");
+	background-position: center bottom !important;
 }
 .b {
 	background-image: url("https://picsum.photos/1600/1200");

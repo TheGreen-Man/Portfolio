@@ -28,7 +28,9 @@ export default function WorkSection(props) {
 			await promiseTimer;
 			setSelectedProject(id);
 			section.classList.add("chapter--expanded");
-			window.scrollTo(0, intro.clientHeight + about.clientHeight);
+			if (window.screen.width <= 990)
+				window.scrollTo(0, intro.clientHeight * 2 + about.clientHeight);
+			else window.scrollTo(0, intro.clientHeight + about.clientHeight);
 		} catch (err) {
 			alert("error, we are all going to die!");
 		}
@@ -53,10 +55,20 @@ export default function WorkSection(props) {
 			await promiseTimer;
 			section.classList.remove("chapter--expanded");
 			setSelectedProject("");
-			window.scrollTo(
-				0,
-				intro.clientHeight + about.clientHeight + intro.clientHeight * x
-			);
+			if (window.screen.width <= 990)
+				window.scrollTo(
+					0,
+					intro.clientHeight * 2 +
+						about.clientHeight +
+						intro.clientHeight * x
+				);
+			else
+				window.scrollTo(
+					0,
+					intro.clientHeight +
+						about.clientHeight +
+						intro.clientHeight * x
+				);
 		} catch (err) {
 			alert(err);
 		}

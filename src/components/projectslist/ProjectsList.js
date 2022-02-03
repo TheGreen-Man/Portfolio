@@ -16,12 +16,20 @@ export default function ProjectsList({
 		let intro = document.querySelector(".intro");
 		let about = document.querySelector(".about");
 		let position = aa.findIndex((ra) => ra.id === openProject);
-		window.scrollTo(
-			0,
-			intro.clientHeight +
-				about.clientHeight +
-				intro.clientHeight * position
-		);
+		if (window.screen.width <= 990)
+			window.scrollTo(
+				0,
+				intro.clientHeight * 2 +
+					about.clientHeight +
+					intro.clientHeight * position
+			);
+		else
+			window.scrollTo(
+				0,
+				intro.clientHeight +
+					about.clientHeight +
+					intro.clientHeight * position
+			);
 	}
 	async function handleClick(e) {
 		const promiseTimer = new Promise((resolve, reject) => {

@@ -1,29 +1,18 @@
 .good-bye {
 	height: 100vh;
 	overflow-x: visible;
-}
-
-.bye-container {
-	position: sticky;
-	overflow-x: inherit;
-	height: 100vh;
-	width: 80%;
-	background-color: red;
-	top: 0;
-	margin: 0 auto;
-}
-
-.bow-animation {
-	display: block;
-	position: absolute;
-	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .aaaa {
 	position: absolute;
-	bottom: 40%;
-	left: 40%;
-	/* max-height: 207px; */
-	/* max-width: 62px; */
 	height: 207px;
 	width: 62px;
+}
+
+.bow-animation {
+	position: absolute;
+	bottom: 0;
+	scale: 1.3;
 }

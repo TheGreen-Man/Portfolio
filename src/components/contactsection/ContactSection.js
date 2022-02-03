@@ -27,21 +27,25 @@ export default function ContactSection() {
 				<p>Front-End Developer</p>
 				<ContactForm />
 				<a
-					href="http://github.com"
+					href="https://github.com/TheGreen-Man"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<FaGithub className="icon" />
 				</a>
 				<a
-					href="http://linkedin.com"
+					href="https://www.linkedin.com/in/filip-crncevic-8b50881a3/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<FaLinkedin className="icon" />
 				</a>
-				<FaRegEnvelopeOpen className="icon" />
-				<FaRegFilePdf className="icon" />
+				<a href="mailto:crncevicf@gmail.com?subject=Hello!">
+					<FaRegEnvelopeOpen className="icon" />
+				</a>
+				<a href="../../frames/Crncevic_CV.pdf" download>
+					<FaRegFilePdf className="icon" />
+				</a>
 			</div>
 		</section>
 	);
