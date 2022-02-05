@@ -3,7 +3,7 @@ import CreateNav from "../navbar/CreateNav";
 import ProjectsNav from "../projectsnav/ProjectsNav";
 import "./WorkSection.css";
 import ProjectsList from "../projectslist/ProjectsList";
-import ExitButton from "../../html/ExitButton";
+import ExitButton from "../exitbutton/ExitButton";
 import { useSpring, animated, useSpringRef, useChain } from "react-spring";
 export default function WorkSection(props) {
 	const [selectedProject, setSelectedProject] = useState("");
