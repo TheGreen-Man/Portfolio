@@ -19,7 +19,7 @@
 }
 .contact-l .main-nav,
 .intro .main-nav {
-	color: #379683;
+	color: var(--clr-accent);
 }
 .nav--links {
 	display: inline-block;
@@ -32,7 +32,7 @@
 
 .contact-l .nav--links,
 .intro .nav--links {
-	color: #379683;
+	color: var(--clr-accent);
 }
 
 .nav--links::after {

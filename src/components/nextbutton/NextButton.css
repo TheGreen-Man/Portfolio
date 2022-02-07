@@ -16,7 +16,7 @@
 	align-items: center;
 	color: var(--clr-white);
 
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--text-weight-bold);
 	font-size: var(--text-size-medium);
 	text-transform: uppercase;
 	cursor: pointer;

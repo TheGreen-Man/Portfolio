@@ -5,10 +5,7 @@ import animationArray from "../../frames/thankyou";
 export default function ByeSection() {
 	const [image, setImage] = useState(animationArray[0]);
 	const observedSection = useRef(null);
-	// console.log("one");
 
-	// const nnn = animationArray.forEach((e, nnn) => nnn.push(e));
-	// console.log(nnn);
 	const options = useMemo(() => {
 		return { root: null, rootMargin: "0px", threshold: 0.65 };
 	}, []);

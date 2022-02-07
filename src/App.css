@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Ole&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ole&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ole&family=Quicksand&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Exo&family=Ole&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Exo&family=Ole&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Exo&family=Great+Vibes&display=swap");
 :root {
-	--clr-accent: #379683;
+	/* --clr-accent: #379683; */
+	--clr-accent: #09cde3;
 	--clr-gray: #292929;
 	--clr-white: white;
 
@@ -14,7 +16,7 @@
 	--text-size-small: 0.875em;
 	--text-size-medium: 1.2em;
 	--text-size-large: 1.5em;
-	--text-family-cursive: "Ole";
+	--text-family-cursive: "Great Vibes";
 
 	--text-clr-gray: rgb(69, 69, 69);
 }

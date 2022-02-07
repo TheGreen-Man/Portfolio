@@ -34,7 +34,9 @@
 		random number	
 	*/
 }
-
+.stroke_accent {
+	stroke: var(--clr-accent);
+}
 /* #svg-animation path:nth-child(1),
 #svg-animation path:nth-child(2),
 #svg-animation path:nth-child(3),
