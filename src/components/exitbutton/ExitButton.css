@@ -4,7 +4,7 @@
 	position: absolute;
 	border-radius: 50%;
 	/* background-color: var(--clr-accent); */
-	outline: 1px solid var(--clr-gray);
+	outline: 1px solid var(--clr-dark);
 
 	top: 96px;
 	right: -30px;
@@ -28,7 +28,7 @@
 
 .circle::before {
 	z-index: 5;
-	background-color: var(--clr-white);
+	background-color: var(--clr-light);
 	animation-name: mask;
 	animation-timing-function: steps(1);
 }
@@ -85,7 +85,7 @@
 		font-size: 300%;
 		border-radius: 50%;
 
-		outline: 1px solid var(--clr-gray);
+		outline: 1px solid var(--clr-dark);
 		z-index: 1;
 	}
 }

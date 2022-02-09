@@ -31,14 +31,14 @@
 }
 .pre-goals {
 	line-height: 1.75em;
-	color: var(--text-clr-gray);
+	color: var(--font-clr-gray);
 }
 .goals {
 	list-style-type: circle;
 	padding: 9px 0px 40px 40px;
 	text-align: left;
 	line-height: 1.75em;
-	color: var(--text-clr-gray);
+	color: var(--font-clr-gray);
 }
 .goals-li {
 	display: list-item;

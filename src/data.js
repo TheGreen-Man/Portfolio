@@ -125,54 +125,64 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "This website was lots of fun building, but also lots of stress. It is made with with React, and animations were mainly done with React Spring library.",
+				text: "This website is a definition of a junior project. Looking at the code, one can see a variety of different styles and approaches to everything, from problems to naming classes. Everything was left that way in order to show the process of learning.",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "This project is made fully using React, and also some of the animations were done using the React Spring library, and others with regular CSS. This was done in order of testing different ways and seeing how they work.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "h3",
-				text: "Let's talk!",
+				text: "Let's talk about some of the problems that this website brought with it.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "different styles",
+				text: "Probably the biggest problem, one that has shown itself rather fast, and that was fixed pretty much at the end of everything. It was chaining scroll with animations when switching from an open project to a second project.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Unlike my first major project, the raw js plugin, this is something where all my knowledge had to be put together, first actual build of something, incorporating all aspects of web development. HTML, CSS and JS all together.",
+				text: "Async/Await was my last resort in combating this problem, and let me be completely honest, it was used in a caveman's way, but it worked!",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "h4",
+				text: "A few other honorable mentions",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "There were many hits at a brick wall creating this. Firstly, even though it was created in React, i wasn't utilising the component way of building, hooks or anything that react has to offer. Same goes for animation, starting this, everything was done in css, but later was converted to React Spring. ",
+				text: '"Welcome" that appears when you first load the page was made in figma, a completely strange application for me. Same thing goes for Bow at the end, made to animate just once, the first time when a user scrolls to a certain position (done by intersection observer).',
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "After all of the frustrations, ups and downs, this was still really a lot of fun. Merging everything together and being limited only by lack of knowledge is a a force that is already filling my head with ideas for the next project.",
 			},
 		],
 	},
 	{
 		title: "eCommerce",
-		subtitle: "Planner like no other",
+		subtitle: "Future project",
 		id: `${nanoid()}`,
 		content: [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "After finishing this portfolio, realisation that i have learned a lot, and yet still don't know even more has came to my mind and my next course of action will be to make once again a website from scratch. This time it is going to be a production grade eCommerce website.",
+				text: "This is just an idea at the moment. It is going to be a regular eCommerce website. My goal with this one is to make a fully operational website, ready to be used by a business owner. It should have everything like other website have, log in, admin privileges, basket, purchase option, maybe even a small database for articles.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Why planner? Friend has a passion for making different styled planners. Everything ranging from proffesional to themed ones, and would like to showcase her work and create a web shop.This is an ideal opportunity for me to gain more expiriance, and for her to not take a financial hit in order to get everything going.",
+				text: "It will also be made fully with react, but the main difference with portfolio is going to be the addition of TypeScript, as well as one of the CSS frameworks (probably tailwind) or maybe just Sass. Since the goal will be to make an production use website, there will also be a focus on accessability.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Goal is pretty simple here. Fully responsive, clean, website on which you should be able to review items, add to card, sign in, or make a purchase as guest. It will also be made using React.",
-			},
-			{
-				id: `${nanoid()}`,
-				element: "p",
-				text: "Since this is a future project that will start as soon as this portfolio is finished, you can watch my progrees on my GitHub account",
+				text: "If you're reading this that probably means i have already started working on this website, and you can watch my progress on my github, where i will try to upload as often as i can.",
 			},
 		],
 	},

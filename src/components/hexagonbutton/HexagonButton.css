@@ -11,9 +11,9 @@
 	justify-content: center;
 	align-items: center;
 
-	color: var(--clr-white);
-	text-shadow: 0px 0px 20px var(--clr-gray);
-	font-size: var(--text-size-large);
+	color: var(--clr-light);
+	text-shadow: 0px 0px 20px var(--clr-dark);
+	font-size: var(--font-size-large);
 }
 
 .project .project__header:hover .header-content .insideDick {

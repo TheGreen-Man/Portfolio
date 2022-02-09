@@ -7,18 +7,20 @@
 :root {
 	/* --clr-accent: #379683; */
 	--clr-accent: #09cde3;
-	--clr-gray: #292929;
-	--clr-white: white;
+	--clr-dark: #292929;
+	--clr-light: white;
+	/* --clr-dark: white; */
+	/* --clr-light: #292929; */
 
-	--text-weight-bold: 800;
-	--text-weight-main-nav: 550;
+	--font-weight-bold: 800;
+	--font-weight-main-nav: 550;
 
-	--text-size-small: 0.875em;
-	--text-size-medium: 1.2em;
-	--text-size-large: 1.5em;
-	--text-family-cursive: "Great Vibes";
+	--font-size-small: 0.875em;
+	--font-size-medium: 1.2em;
+	--font-size-large: 1.5em;
+	--font-family-cursive: "Great Vibes";
 
-	--text-clr-gray: rgb(69, 69, 69);
+	--font-clr-gray: rgb(69, 69, 69);
 }
 
 #die {
@@ -36,13 +38,13 @@
 }
 
 .white {
-	background-color: var(--clr-white);
+	background-color: var(--clr-light);
 }
 .green {
 	background-color: var(--clr-accent);
 }
 .gray {
-	background-color: var(--clr-gray);
+	background-color: var(--clr-dark);
 }
 .fullpage-section {
 	position: relative;
@@ -128,7 +130,7 @@ a:active {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	font-family: var(--text-family-cursive), cursive;
+	font-family: var(--font-family-cursive), cursive;
 	font-size: 7em;
 	overflow-x: inherit;
 	text-shadow: 2px 2px var(--clr-accent);
@@ -142,7 +144,7 @@ a:active {
 p {
 	max-width: 65ch;
 	line-height: 1.75em;
-	color: var(--text-clr-gray);
+	color: var(--font-clr-gray);
 }
 
 h1,

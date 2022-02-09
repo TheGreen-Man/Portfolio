@@ -3,7 +3,7 @@
 	bottom: 0;
 	padding-bottom: 4%;
 	width: 100%;
-	font-weight: var(--text-weight-main-nav);
+	font-weight: var(--font-weight-main-nav);
 	text-transform: uppercase;
 }
 

@@ -1,7 +1,7 @@
 .next--container {
 	/* min-height: 70px; */
 	padding: 72px;
-	background-color: var(--clr-white);
+	background-color: var(--clr-light);
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -14,10 +14,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: var(--clr-white);
+	color: var(--clr-light);
 
-	font-weight: var(--text-weight-bold);
-	font-size: var(--text-size-medium);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-medium);
 	text-transform: uppercase;
 	cursor: pointer;
 }
