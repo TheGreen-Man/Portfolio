@@ -31,16 +31,6 @@
 	height: 100%;
 }
 
-.ncr-background {
-	background-image: url("../../frames/ncr/ncr123.png");
-	background-position: center bottom !important;
-}
-.portfolio-background {
-	background-image: url("../../frames/portfolio.png");
-}
-.future-project-background {
-	background-image: url("../../frames/future.png");
-}
 .project-image {
 	position: absolute;
 	top: 0;
@@ -55,6 +45,9 @@
 	-webkit-transition: 8s -webkit-transform linear;
 	transition: 8s transform linear;
 }
+/* .project-image:first-child {
+	background-position: center bottom !important;
+} */
 .chapter--expanded .project__header {
 	cursor: default;
 }

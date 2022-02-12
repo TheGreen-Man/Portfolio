@@ -7,7 +7,7 @@ export default function ByeSection() {
 	const observedSection = useRef(null);
 
 	const options = useMemo(() => {
-		return { root: null, rootMargin: "0px", threshold: 0.65 };
+		return { root: null, rootMargin: "0px", threshold: 0.85 };
 	}, []);
 	function animate(i) {
 		setTimeout(() => {

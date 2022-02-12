@@ -4,7 +4,7 @@
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
 }
-.mid {
+.next-container > div {
 	height: 65px;
 	width: 65px;
 	background-color: var(--clr-accent);

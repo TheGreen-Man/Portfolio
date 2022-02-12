@@ -5,7 +5,7 @@ import AboutSection from "./components/aboutsection/AboutSection";
 import WorkSection from "./components/worksection/WorkSection";
 import ContactSection from "./components/contactsection/ContactSection";
 import ByeSection from "./components/byesection/ByeSection";
-import scroll from "./js/scroll";
+import scroll from "./utility/scroll";
 import PROJECTS from "./data";
 import MenuButtonMobile from "./components/menubuttonmobile/MenuButtonMobile";
 

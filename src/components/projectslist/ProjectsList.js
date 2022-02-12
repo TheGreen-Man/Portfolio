@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
 import "./ProjectsList.css";
+import promiseTimer from "../../utility/promiseTimer";
+import closer from "../../utility/closer";
+
 export default function ProjectsList({
 	title,
 	id,
@@ -9,47 +12,17 @@ export default function ProjectsList({
 	setUpDownAnimation,
 	setSelectedProject,
 }) {
-	function helper() {
-		let a = document.querySelectorAll(".project-ul li > div");
-		let aa = Object.values(a);
-		let intro = document.querySelector(".intro");
-		let about = document.querySelector(".about");
-		let position = aa.findIndex((ra) => ra.id === openProject);
-		if (window.screen.width <= 990)
-			window.scrollTo(
-				0,
-				intro.clientHeight * 2 +
-					about.clientHeight +
-					intro.clientHeight * position
-			);
-		else
-			window.scrollTo(
-				0,
-				intro.clientHeight +
-					about.clientHeight +
-					intro.clientHeight * position
-			);
-	}
 	async function handleClick(e) {
-		const promiseTimer = new Promise((resolve, reject) => {
-			setTimeout(() => {
-				resolve();
-			}, 2000);
-		});
-		const promiseTimer2 = new Promise((resolve, reject) => {
-			setTimeout(() => {
-				resolve();
-			}, 2066);
-		});
 		// this if will work if none of the projects are open
 		if (!openProject) document.getElementById(id + "1").click();
 		// else works if a project is open and user presses on another project
 		else {
 			setUpDownAnimation(false);
-			await promiseTimer;
+			await promiseTimer(2000);
 			setSelectedProject("");
-			helper(e.target.innerText);
-			await promiseTimer2;
+
+			closer(openProject);
+			await promiseTimer(50);
 			document.getElementById(id + "1").click();
 		}
 	}

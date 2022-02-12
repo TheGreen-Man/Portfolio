@@ -3,11 +3,15 @@ import navbar from "../src/frames/ncr/nav.png";
 import selection from "../src/frames/ncr/selection.png";
 import work from "../src/frames/ncr/work.png";
 import di from "../src/frames/ncr/dispatch.png";
-
+import ncrBackground from "../src/frames/ncr/ncr123.png";
+import portfolioBackground from "../src/frames/portfolio.png";
+import futureProjectBackground from "../src/frames/future.png";
 const PROJECTS = [
 	{
 		title: "TheMachine",
 		subtitle: "Ticket assistant tool",
+		background: ncrBackground,
+
 		id: `${nanoid()}`,
 		content: [
 			// {
@@ -120,6 +124,7 @@ const PROJECTS = [
 	{
 		title: "Portfolio",
 		subtitle: "It's this website!",
+		background: portfolioBackground,
 		id: `${nanoid()}`,
 		content: [
 			{
@@ -168,6 +173,8 @@ const PROJECTS = [
 		title: "eCommerce",
 		subtitle: "Future project",
 		id: `${nanoid()}`,
+		background: futureProjectBackground,
+
 		content: [
 			{
 				id: `${nanoid()}`,

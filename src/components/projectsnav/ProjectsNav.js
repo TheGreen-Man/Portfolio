@@ -1,14 +1,17 @@
 import React from "react";
-import HexagonButton from "../hexagonbutton/HexagonButton";
 import "./ProjectsNav.css";
 import { Link } from "react-scroll";
 import { useSpring, animated, useSpringRef, useChain } from "react-spring";
+import MoreButton from "../morebutton/MoreButton";
 import NextButton from "../nextbutton/NextButton";
+import contentCreator from "../../utility/contentCreator";
+import nextButtonClick from "../../utility/nextButtonClick";
 
 function ProjectsNav({
 	id,
 	title,
 	subtitle,
+	background,
 	content,
 	index,
 	handleClick,
@@ -17,27 +20,7 @@ function ProjectsNav({
 	upDown,
 	selected,
 }) {
-	let foo = document.querySelectorAll(".project-nav a");
-	function nextButtonClick() {
-		if (index + 1 === foo.length) foo[0].click();
-		else foo[index + 1].click();
-	}
-
-	function abc(e) {
-		if (e === 0) return "ncr-background";
-		else if (e === 1) return "portfolio-background";
-		else if (e === 2) return "future-project-background";
-	}
-
-	const info = content.map((e) => {
-		if (e.element === "p") return <p key={e.id}>{e.text}</p>;
-		else if (e.element === "h1") return <h1 key={e.id}>{e.text}</h1>;
-		else if (e.element === "h2") return <h2 key={e.id}>{e.text}</h2>;
-		else if (e.element === "h3") return <h3 key={e.id}>{e.text}</h3>;
-		else if (e.element === "img")
-			return <img key={e.id} src={e.src} alt={e.alt} />;
-		else return null;
-	});
+	let handleNextButtonClick = () => nextButtonClick(index);
 
 	const imageContainerApi = useSpringRef();
 	const imageContainer = useSpring({
@@ -58,8 +41,8 @@ function ProjectsNav({
 		!leftRight ? [1, 1] : [1.5, 1.5]
 	);
 
-	const nextButton = <NextButton onClick={nextButtonClick} />;
-
+	const nextButton = <NextButton onClick={handleNextButtonClick} />;
+	const hiddenContent = content.map((e) => contentCreator(e));
 	return (
 		<li id={shouldShow ? null : "die"}>
 			<div className="project" id={id}>
@@ -73,12 +56,15 @@ function ProjectsNav({
 						id={id + "1"}
 						href="#"
 					>
-						<div className={`project-image ${abc(index)}`}></div>
+						<div
+							className="project-image"
+							style={{ backgroundImage: `url(${background})` }}
+						></div>
 						<div className="header-content">
 							<h5 className="header-title">{title}</h5>
 							<h6 className="header-subtitle">{subtitle}</h6>
 
-							<HexagonButton />
+							<MoreButton />
 						</div>
 					</Link>
 				</animated.div>
@@ -87,7 +73,7 @@ function ProjectsNav({
 					className="project-content"
 					id={id + "2"}
 				>
-					{info}
+					{hiddenContent}
 					{nextButton}
 				</animated.div>
 			</div>
