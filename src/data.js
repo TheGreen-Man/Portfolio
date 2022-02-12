@@ -186,40 +186,6 @@ const PROJECTS = [
 			},
 		],
 	},
-	// {
-	// 	title: "Projekat 4",
-	// 	subtitle: "Subtitle 4",
-	// 	id: `${nanoid()}`,
-	// 	content: [
-	// 		{
-	// 			id: `${nanoid()}`,
-	// 			element: "p",
-	// 			text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dolorum. Totam maiores nisi consequatur voluptatum praesentium in nihil, eaque laudantium.",
-	// 		},
-	// 		{
-	// 			// id: `${nanoid()}`,
-	// 			id: `${nanoid()}`,
-	// 			element: "p",
-	// 			text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dolorum. Totam maiores nisi consequatur voluptatum praesentium in nihil, eaque laudantium.",
-	// 		},
-	// 		{
-	// 			// id: `${nanoid()}`,
-	// 			id: `${nanoid()}`,
-	// 			element: "p",
-	// 			text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, dolorum. Totam maiores nisi consequatur voluptatum praesentium in nihil, eaque laudantium.",
-	// 		},
-	// 		{
-	// 			id: `${nanoid()}`,
-	// 			element: "p",
-	// 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reiciendis nemo autem saepe? Quia reiciendis similique consequatur accusantium quas? Ut ullam, voluptas neque maiores maxime ex beatae corrupti sint molestias exercitationem iure, corporis fugit in pariatur error sed excepturi consectetur quasi veniam minima quia rem! Perspiciatis maxime earum excepturi quisquam quidem ut veritatis nesciunt aperiam numquam, quod totam porro! Totam dolor hic velit, praesentium suscipit, perspiciatis provident labore qui culpa, quos quasi illum cum blanditiis? Delectus vel soluta iure distinctio, cumque cum qui dolores. Architecto fugiat, aliquid illo alias cupiditate pariatur consequuntur ipsum mollitia dolor dicta recusandae minus, porro commodi.",
-	// 		},
-	// 		{
-	// 			id: `${nanoid()}`,
-	// 			element: "p",
-	// 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reiciendis nemo autem saepe? Quia reiciendis similique consequatur accusantium quas? Ut ullam, voluptas neque maiores maxime ex beatae corrupti sint molestias exercitationem iure, corporis fugit in pariatur error sed excepturi consectetur quasi veniam minima quia rem! Perspiciatis maxime earum excepturi quisquam quidem ut veritatis nesciunt aperiam numquam, quod totam porro! Totam dolor hic velit, praesentium suscipit, perspiciatis provident labore qui culpa, quos quasi illum cum blanditiis? Delectus vel soluta iure distinctio, cumque cum qui dolores. Architecto fugiat, aliquid illo alias cupiditate pariatur consequuntur ipsum mollitia dolor dicta recusandae minus, porro commodi.",
-	// 		},
-	// 	],
-	// },
 ];
 
 export default PROJECTS;

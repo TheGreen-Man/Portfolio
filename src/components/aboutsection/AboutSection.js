@@ -59,8 +59,12 @@ export default function AboutSection() {
 						<li className="goals-li">Mastering already known</li>
 					</ul>
 					<div className="l-img-r-text">
-						<img src={peace} alt="Hi" className="foo" />
-						<div className="poo">
+						<img
+							src={peace}
+							alt="Hand peace sign"
+							className="peace"
+						/>
+						<div className="peace-text">
 							<p>
 								As a self taught, I enjoy working alone, but I
 								strongly believe in teamwork in order of

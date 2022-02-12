@@ -93,7 +93,6 @@ export default function WorkSection(props) {
 
 	useChain(
 		[leftContainerApi, rightContainerApi],
-		// closing  // opening
 		!leftRightAnimation ? [1.5, 1.5] : [1, 1]
 	);
 
@@ -119,30 +118,11 @@ export default function WorkSection(props) {
 			id={e.id}
 			selected={selectedProject === e.id}
 			openProject={selectedProject}
-			next={next}
 			key={e.id + "plkey"}
 			setUpDownAnimation={setUpDownAnimation}
 			setSelectedProject={setSelectedProject}
 		/>
 	));
-	async function next(id) {
-		const promiseTimer = new Promise((resolve, reject) => {
-			setTimeout(() => {
-				resolve();
-			}, 1500);
-		});
-		const promiseTimer2 = new Promise((resolve, reject) => {
-			setTimeout(() => {
-				resolve();
-			}, 2000);
-		});
-		setUpDownAnimation(false);
-		await promiseTimer;
-		setSelectedProject("");
-		await promiseTimer2;
-		document.getElementById(id + "1").click();
-	}
-
 	return (
 		<section className="fullpage-section work chapter" id="work">
 			<animated.div className="left work-l white" style={leftContainer}>

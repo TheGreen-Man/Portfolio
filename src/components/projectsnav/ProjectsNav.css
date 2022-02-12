@@ -16,7 +16,7 @@
 	left: 0;
 }
 
-.opo {
+.animated-div {
 	height: 100vh;
 	position: relative;
 }
@@ -35,10 +35,10 @@
 	background-image: url("../../frames/ncr/ncr123.png");
 	background-position: center bottom !important;
 }
-.b {
+.portfolio-background {
 	background-image: url("../../frames/portfolio.png");
 }
-.c {
+.future-project-background {
 	background-image: url("../../frames/future.png");
 }
 .project-image {

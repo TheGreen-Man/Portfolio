@@ -1,8 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import HexagonButton from "../hexagonbutton/HexagonButton";
 import "./ProjectsNav.css";
-import "./ProjectsNavExpanded.css";
 import { Link } from "react-scroll";
 import { useSpring, animated, useSpringRef, useChain } from "react-spring";
 import NextButton from "../nextbutton/NextButton";
@@ -27,9 +25,8 @@ function ProjectsNav({
 
 	function abc(e) {
 		if (e === 0) return "ncr-background";
-		if (e === 1) return "b";
-		if (e === 2) return "c";
-		if (e === 3) return "d";
+		else if (e === 1) return "portfolio-background";
+		else if (e === 2) return "future-project-background";
 	}
 
 	const info = content.map((e) => {
@@ -58,7 +55,6 @@ function ProjectsNav({
 
 	useChain(
 		[imageContainerApi, infoContainerApi],
-		//closing   // openinng
 		!leftRight ? [1, 1] : [1.5, 1.5]
 	);
 
@@ -66,12 +62,8 @@ function ProjectsNav({
 
 	return (
 		<li id={shouldShow ? null : "die"}>
-			<div
-				// style={openAnimated}
-				className="project"
-				id={id}
-			>
-				<animated.div className="opo" style={imageContainer}>
+			<div className="project" id={id}>
+				<animated.div className="animated-div" style={imageContainer}>
 					<Link
 						to={selected ? " " : id}
 						smooth={true}

@@ -26,27 +26,10 @@
 #svg-animation {
 	width: 42%;
 	height: 42%;
-	/*  why 42 you might ask?
-		is it because its
-		the Answer to the Ultimate Question of Life, 
-		the Universe and Everything.
-		or maybe, it is just a 
-		random number	
-	*/
 }
 .stroke_accent {
 	stroke: var(--clr-accent);
 }
-/* #svg-animation path:nth-child(1),
-#svg-animation path:nth-child(2),
-#svg-animation path:nth-child(3),
-#svg-animation path:nth-child(4),
-#svg-animation path:nth-child(5),
-#svg-animation path:nth-child(6),
-#svg-animation path:nth-child(7),
-#svg-animation path:nth-child(8) {
-	animation: filler 2s ease-in forwards 2.1s;
-} */
 
 #svg-animation path:nth-child(9) {
 	stroke-dasharray: 3151.26318359375;
@@ -87,13 +70,5 @@
 @keyframes line-animation {
 	to {
 		stroke-dashoffset: 0;
-	}
-}
-@keyframes filler {
-	from {
-		fill: var(--clr-dark);
-	}
-	to {
-		fill: var(--clr-accent);
 	}
 }

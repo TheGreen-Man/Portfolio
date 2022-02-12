@@ -34,14 +34,13 @@ export default function ByeSection() {
 			className="fullpage-section good-bye green"
 			ref={observedSection}
 		>
-			<div className="aaaa">
+			<div className="bow-container">
 				<img
 					src={image}
-					alt="bow animation"
+					alt="Person bowing as gratitude"
 					className="bow-animation"
 				/>
 			</div>
-			<div className="ty"></div>
 		</section>
 	);
 }

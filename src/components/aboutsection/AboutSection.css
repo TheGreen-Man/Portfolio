@@ -45,16 +45,13 @@
 	overflow-x: initial;
 }
 
-.foo {
+.peace {
 	width: 33%;
 	max-width: 100px;
-	/* display: inline-block; */
 	float: left;
 }
-.poo {
-	/* display: inline-block; */
+.peace-text {
 	width: 66.67%;
-	/* max-width: 66.67%; */
 	padding-left: 40px;
 	float: left;
 }

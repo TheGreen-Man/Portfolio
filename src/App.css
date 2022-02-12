@@ -1,16 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Ole&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Ole&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ole&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ole&family=Quicksand&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Exo&family=Ole&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Exo&family=Great+Vibes&display=swap");
 :root {
 	/* --clr-accent: #379683; */
 	--clr-accent: #09cde3;
 	--clr-dark: #292929;
 	--clr-light: white;
-	/* --clr-dark: white; */
-	/* --clr-light: #292929; */
 
 	--font-weight-bold: 800;
 	--font-weight-main-nav: 550;
@@ -31,9 +24,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* font-family: "Nanum Gothic"; */
-	/* font-family: "Fira Sans"; */
-	/* font-family: "Quicksand"; */
 	font-family: "Exo";
 }
 
@@ -60,7 +50,6 @@ ul {
 }
 li {
 	display: inline-block;
-	/* cursor: pointer; */
 }
 
 a:visited,
@@ -137,8 +126,8 @@ a:active {
 }
 .about-l .unselectables,
 .contact-l .unselectables {
-	text-shadow: 3px 3px black;
-	color: white;
+	text-shadow: 3px 3px var(--clr-dark);
+	color: var(--clr-light);
 }
 
 p {

@@ -5,7 +5,6 @@ import "./ContactForm.css";
 export default function ContactForm() {
 	const [state, handleSubmit] = useForm("mdoyvpbp");
 	const ty = <p className="ty">Thank you!</p>;
-	// console.log(state.succeeded);
 	return (
 		<div className="form-container">
 			<form onSubmit={handleSubmit}>

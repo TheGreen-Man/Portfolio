@@ -6,10 +6,10 @@
 	background-color: #f2f2f2;
 	box-shadow: 3px 3px 10px #b3b3b3;
 }
-input[type="text"],
-input[type="email"],
-select,
-textarea {
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container select,
+.form-container textarea {
 	width: 96%;
 	padding: 6px;
 	border: 1px solid #ccc;
@@ -18,14 +18,14 @@ textarea {
 	margin-bottom: 16px;
 	margin-left: 5px;
 }
-label {
+.form-container label {
 	margin-left: 5px;
 }
-textarea {
+.form-container textarea {
 	resize: none;
 }
 
-button {
+.form-container button {
 	cursor: pointer;
 	display: block;
 	margin: auto;

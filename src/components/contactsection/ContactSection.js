@@ -6,7 +6,6 @@ import {
 	FaRegEnvelopeOpen,
 	FaRegFilePdf,
 } from "react-icons/fa";
-// import { HiMail } from "react-icons/hi";
 import CreateNav from "../navbar/CreateNav";
 import "./ContactSection.css";
 

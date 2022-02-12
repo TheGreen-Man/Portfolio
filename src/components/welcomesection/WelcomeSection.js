@@ -1,15 +1,8 @@
 import React from "react";
 import CreateNav from "../navbar/CreateNav";
-// import logo from "../../img/8.jpeg";
 import "./WelcomeSection.css";
 
 export default function WelcomeSection() {
-	// let x = document.querySelectorAll("#svg-animation path");
-	// console.log(x);
-	// for (let i = 0; i < x.length; i++) {
-	// 	console.log(`letter ${i} is ${x[i].getTotalLength()}`);
-	// }
-
 	return (
 		<section className="fullpage-section intro gray">
 			<h1 className="proffesion">Front-end Developer</h1>

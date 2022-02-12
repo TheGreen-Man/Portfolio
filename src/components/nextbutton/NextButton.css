@@ -1,5 +1,4 @@
-.next--container {
-	/* min-height: 70px; */
+.next-container {
 	padding: 72px;
 	background-color: var(--clr-light);
 	cursor: pointer;
