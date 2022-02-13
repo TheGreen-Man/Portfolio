@@ -31,7 +31,7 @@ export default function ByeSection() {
 
 	return (
 		<section
-			className="fullpage-section good-bye green"
+			className="fullpage-section good-bye accent"
 			ref={observedSection}
 		>
 			<div className="bow-container">

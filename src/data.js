@@ -14,21 +14,11 @@ const PROJECTS = [
 
 		id: `${nanoid()}`,
 		content: [
-			// {
-			// 	id: `${nanoid()}`,
-			// 	element: "h1",
-			// 	text: "Intro",
-			// },
 			{
 				id: `${nanoid()}`,
 				element: "h1",
 				text: "Custom made mozilla firefox plugin, created to assist in ticket handeling trough Neos (NCR's Ticket handling tool).",
 			},
-			// {
-			// 	id: `${nanoid()}`,
-			// 	element: "p",
-			// 	text: "Now with that out of the way, let's begin!",
-			// },
 			{
 				id: `${nanoid()}`,
 				element: "p",
@@ -49,28 +39,23 @@ const PROJECTS = [
 				id: `${nanoid()}`,
 				element: "img",
 				src: navbar,
-				alt: "alt",
+				alt: "Neos navigation bar",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Clicking will create a dropdown menu. First 2 fields are not clickable, and they are pulling information from auto generated logs trough ReGeX and showing issue information and register model.",
+				text: "Clicking will create a dropdown menu. First 2 fields are not clickable, and they are pulling information, using ReGeX, from auto generated logs and showing issue information and register model.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "img",
 				src: selection,
-				alt: "alt",
+				alt: "Dropdown menu, from the Machine, 'selection' options",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "The selection of the correct model/issue now begins. In this case, the register is a SelfCheckout (SCO), model is R6L+, issue is with the bill acceptor (GSR50) and a part that needs to be checked with the sc030s05215us is where is the issue located, that is in this case in top module.",
-			},
-			{
-				id: `${nanoid()}`,
-				element: "p",
-				text: "As you might have noticed, there are also new fields here, **field is a regular back button, while the ***field is also generated from the information in the ticket, to create a register name that on click gets copied and can be used for easy access to the register via different app",
+				text: "The selection of the correct model/issue now begins. In this case, the register is a SelfCheckout (SCO), model is R6L+, issue is with the bill acceptor (GSR50) and the exact location of the issue can be found accessing the register with sc030s05215us, and it is in this case in top module.",
 			},
 			{
 				id: `${nanoid()}`,
@@ -85,29 +70,29 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Two fields marked with **** are dispatch model of the unit. It is filled automatically when KB is set, but some KB's are not connected with proper model, so these fields are handy to check that and if needed replace.",
+				text: "Two fields marked with **** are dispatch model of the unit. It is filled automatically by Neos itself when KB is set, but some KB's are not connected with proper model, so these fields come in handy if it needs to be replaced.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "img",
 				src: work,
-				alt: "alt",
+				alt: "Dropdown menu, 'work' options",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "RR or DI means Remotely Resolved or Dispatch. RR process is really short, so i won't be talking about that one, but DI on the other hand is a bit different. Process goes somewhat like this, first a log needs to be sent, task needs to be created, then dispatched (from inside task itself), and after dispatch has been accepted, a return log will come with a code called SR, last part is taking that SR and add it to the description.",
+				text: "RR or DI means Remotely Resolved or Dispatch. RR process is really short, so i won't be talking about that one, but DI on the other hand is a bit different. Process goes somewhat like this, first a log needs to be sent, task needs to be created, then dispatched (from inside task itself), and after dispatch has been accepted, a return log will come with a number called SR, last part is taking that SR and adding it to the description.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Mutation observer really shines here, being able to chain multiple things together, and also some more regex for the SR number search.",
+				text: "Mutation observer really shines here, being able to chain multiple things together, and also some more ReGeX for the SR number search.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "img",
 				src: di,
-				alt: "alt",
+				alt: "Dropdown menu, 'dispatch' options",
 			},
 			{
 				id: `${nanoid()}`,
@@ -117,7 +102,7 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Even though this project is fully operational, there are always ways to improve. Certain checkers that would remove the need for clicking to continue, some additional features, extreme case scenarios where certain fields in ticket are missing so a field to add that info manually would come handy, etc. can always be added, but i would say that my main goal is to rewrite the whole thing, make it fully automatic, using cypress.",
+				text: "Even though this project is fully operational, there are always ways to improve. Certain checkers that would remove the need for clicking to continue, model checker before clicking DI, extreme case scenarios where certain fields in ticket are missing so a field to add that info manually... But also, this would be a great exercise to rewrite everything using cypress and making it fully automatic.",
 			},
 		],
 	},
@@ -135,7 +120,7 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "This project is made fully using React, and also some of the animations were done using the React Spring library, and others with regular CSS. This was done in order of testing different ways and seeing how they work.",
+				text: "It's made fully using React, and also some of the animations were done using the React Spring library, and others with regular CSS. This was done in order of testing different ways and seeing how they work.",
 			},
 			{
 				id: `${nanoid()}`,
@@ -150,7 +135,7 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "Async/Await was my last resort in combating this problem, and let me be completely honest, it was used in a caveman's way, but it worked!",
+				text: "Async/Await was my last resort in combating this problem, and let me be completely honest, it was used in a cavemans way, but it worked!",
 			},
 			{
 				id: `${nanoid()}`,

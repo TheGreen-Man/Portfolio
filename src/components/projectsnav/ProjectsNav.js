@@ -20,8 +20,6 @@ function ProjectsNav({
 	upDown,
 	selected,
 }) {
-	let handleNextButtonClick = () => nextButtonClick(index);
-
 	const imageContainerApi = useSpringRef();
 	const imageContainer = useSpring({
 		ref: imageContainerApi,
@@ -41,6 +39,7 @@ function ProjectsNav({
 		!leftRight ? [1, 1] : [1.5, 1.5]
 	);
 
+	let handleNextButtonClick = () => nextButtonClick(index);
 	const nextButton = <NextButton onClick={handleNextButtonClick} />;
 	const hiddenContent = content.map((e) => contentCreator(e));
 	return (

@@ -70,7 +70,7 @@ export default function WorkSection({ projects }) {
 		/>
 	));
 
-	const spawnProjectsLi = projects.map((e, index) => (
+	const spawnProjectsLi = projects.map((e) => (
 		<ProjectsList
 			title={e.title}
 			id={e.id}
@@ -83,7 +83,7 @@ export default function WorkSection({ projects }) {
 	));
 	return (
 		<section className="fullpage-section work chapter" id="work">
-			<animated.div className="left work-l white" style={leftContainer}>
+			<animated.div className="left work-l light" style={leftContainer}>
 				<h1 className="unselectables">Work</h1>
 				<nav className="project-nav">
 					<ul>{spawnProjectsLi}</ul>

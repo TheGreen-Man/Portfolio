@@ -11,12 +11,12 @@ import "./ContactSection.css";
 
 export default function ContactSection() {
 	return (
-		<section className="fullpage-section contact gray" id="contact">
+		<section className="fullpage-section contact dark" id="contact">
 			<div className="left contact-l">
 				<h1 className="unselectables">Contact</h1>
 				<CreateNav />
 			</div>
-			<div className="right contact-r white">
+			<div className="right contact-r light">
 				<h2>Let's get in touch!</h2>
 				<p>
 					If you have any additional questions, or are just interested

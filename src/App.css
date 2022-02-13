@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo&family=Great+Vibes&display=swap");
 :root {
 	/* --clr-accent: #379683; */
-	--clr-accent: #09cde3;
+	/* --clr-accent: #09cde3; */
+	--clr-accent: #990033;
 	--clr-dark: #292929;
 	--clr-light: white;
 
@@ -27,13 +28,13 @@
 	font-family: "Exo";
 }
 
-.white {
+.light {
 	background-color: var(--clr-light);
 }
-.green {
+.accent {
 	background-color: var(--clr-accent);
 }
-.gray {
+.dark {
 	background-color: var(--clr-dark);
 }
 .fullpage-section {
@@ -57,7 +58,7 @@ a:focus,
 a:active {
 	color: inherit;
 }
-.chapter--expanded .left {
+.left {
 	border-right: 1px solid #efefef;
 }
 @media screen and (min-width: 980px) {
@@ -128,6 +129,9 @@ a:active {
 .contact-l .unselectables {
 	text-shadow: 3px 3px var(--clr-dark);
 	color: var(--clr-light);
+}
+.contact-l .unselectables {
+	text-shadow: 3px 3px var(--clr-accent);
 }
 
 p {

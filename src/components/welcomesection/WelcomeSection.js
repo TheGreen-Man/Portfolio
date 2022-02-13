@@ -4,7 +4,7 @@ import "./WelcomeSection.css";
 
 export default function WelcomeSection() {
 	return (
-		<section className="fullpage-section intro gray">
+		<section className="fullpage-section intro dark">
 			<h1 className="proffesion">Front-end Developer</h1>
 
 			<div className="image-container">

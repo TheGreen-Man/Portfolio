@@ -94,10 +94,11 @@
 }
 
 .project-content p {
-	padding: 0 72px 36px 92px;
+	padding: 20px 72px 36px 92px;
 	line-height: 1.3em;
 	display: block;
 	margin: 0 auto;
+	text-align: left;
 }
 
 .project-content img {

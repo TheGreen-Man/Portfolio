@@ -34,12 +34,21 @@
 	color: var(--font-clr-gray);
 }
 .goals {
-	list-style-type: circle;
+	/* list-style-type: circle; */
 	padding: 9px 0px 40px 40px;
 	text-align: left;
 	line-height: 1.75em;
 	color: var(--font-clr-gray);
 }
+.goals-li::before {
+	content: "\25E6";
+	color: var(--clr-accent);
+	font-size: var(--font-size-medium);
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
 .goals-li {
 	display: list-item;
 	overflow-x: initial;

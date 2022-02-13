@@ -7,12 +7,12 @@ import peace from "../../frames/Peace.png";
 export default function AboutSection() {
 	return (
 		<section className="fullpage-section about" id="about">
-			<div className="left about-l green">
+			<div className="left about-l accent">
 				<img className="headshot" src={me} alt="me" />
 				<h1 className="unselectables">About</h1>
 				<CreateNav />
 			</div>
-			<div className="right about-r white">
+			<div className="right about-r light">
 				<div className="about-content">
 					<h3>
 						I am a junior front end developer from Belgrade, Serbia.
@@ -24,9 +24,9 @@ export default function AboutSection() {
 					</p>
 					<h4>Start of a wonderful journey</h4>
 					<p>
-						First encounter with HTML and CSS came while in first
-						year of college, where we were making our personal
-						websites to upload our assignments to.
+						First encounter with HTML and CSS came while in college,
+						where we were making our personal websites to upload our
+						assignments to.
 					</p>
 					<p>
 						Having zero knowledge in HTML & CSS, it was made fairly
@@ -40,9 +40,9 @@ export default function AboutSection() {
 					<p>
 						A couple of years later, life brought me to NCR. Working
 						there, I have noticed that there are many ways to
-						increase my efficiency by automatisation, and so the
-						idea to build "The Machine" was born. More information
-						about this project will be in the project section below.
+						increase my efficiency, and so the idea to build "The
+						Machine" was born. More information about this project
+						will be in the project section below.
 					</p>
 					<h5>What the future holds</h5>
 					<p>
@@ -52,10 +52,11 @@ export default function AboutSection() {
 					</p>
 					<span className="pre-goals">Aims and goals</span>
 					<ul className="goals">
-						<li className="goals-li">Website performance</li>
+						<li className="goals-li">Performance</li>
+						<li className="goals-li">React and React Native</li>
+						<li className="goals-li">Testing (cypress/jest)</li>
+						<li className="goals-li">Security</li>
 						<li className="goals-li">Accessability</li>
-						<li className="goals-li">React Native</li>
-						<li className="goals-li">Testing (cypress)</li>
 						<li className="goals-li">Mastering already known</li>
 					</ul>
 					<div className="l-img-r-text">
