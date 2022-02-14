@@ -2,7 +2,12 @@
 :root {
 	/* --clr-accent: #379683; */
 	/* --clr-accent: #09cde3; */
+	/* --clr-accent: #135494; */
+	/* --clr-accent: #45085e; */
+	/* --clr-accent: #066124; */
+	/* --clr-accent: #999400; */
 	--clr-accent: #990033;
+
 	--clr-dark: #292929;
 	--clr-light: white;
 
@@ -11,7 +16,8 @@
 
 	--font-size-small: 0.875em;
 	--font-size-medium: 1.2em;
-	--font-size-large: 1.5em;
+	--font-size-large: 1.65em;
+	--font-size-huge: 2.1em;
 	--font-family-cursive: "Great Vibes";
 
 	--font-clr-gray: rgb(69, 69, 69);
@@ -58,9 +64,7 @@ a:focus,
 a:active {
 	color: inherit;
 }
-.left {
-	border-right: 1px solid #efefef;
-}
+
 @media screen and (min-width: 980px) {
 	.left {
 		width: 50%;
@@ -101,7 +105,9 @@ a:active {
 	height: fit-content;
 	z-index: -1;
 }
-
+.expanded .work-l {
+	border-right: 1px solid #efefef;
+}
 .fixed {
 	position: fixed;
 	z-index: 2;

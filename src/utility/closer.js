@@ -1,6 +1,8 @@
 export default function closer(selected) {
 	let intro = document.querySelector(".intro");
 	let about = document.querySelector(".about");
+	let work = document.querySelector(".work");
+	work.classList.remove("expanded");
 
 	let projectsNodeList = document.querySelectorAll(".project-ul li > div");
 	let projectsArray = Object.values(projectsNodeList);

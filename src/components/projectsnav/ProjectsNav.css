@@ -48,7 +48,7 @@
 /* .project-image:first-child {
 	background-position: center bottom !important;
 } */
-.chapter--expanded .project__header {
+.expanded .project__header {
 	cursor: default;
 }
 
@@ -76,11 +76,11 @@
 
 .header-title {
 	margin-bottom: 1%;
-	font-size: 1.9em;
+	font-size: var(--font-size-huge);
 	letter-spacing: 1.5px;
 }
 .header-subtitle {
-	font-size: 1em;
+	font-size: var(--font-size-medium);
 	letter-spacing: 1.3px;
 }
 
@@ -90,7 +90,7 @@
 	line-height: 1.5em;
 	font-weight: 700;
 	text-shadow: 2px 2px var(--clr-accent);
-	color: black;
+	color: white;
 }
 
 .project-content p {
@@ -119,6 +119,6 @@
 	padding: 10px 72px 20px 72px;
 }
 
-.chapter--expanded .project-ul .project-image {
+.expanded .project-ul .project-image {
 	transform: scale(1.3);
 }

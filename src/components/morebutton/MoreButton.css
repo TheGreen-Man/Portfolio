@@ -19,6 +19,6 @@
 .project .project__header:hover .header-content .more-button {
 	transform: scale(0.6);
 }
-.chapter--expanded .project-ul .header-content .more-button {
+.expanded .project-ul .header-content .more-button {
 	transform: scale(0) !important;
 }

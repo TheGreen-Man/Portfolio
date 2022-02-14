@@ -145,7 +145,7 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: '"Welcome" that appears when you first load the page was made in figma, a completely strange application for me. Same thing goes for Bow at the end, made to animate just once, the first time when a user scrolls to a certain position (done by intersection observer).',
+				text: '"Welcome" that appears when you first load the page was made in figma, and this is my first encounter with that app, so a lot of googling was done to create it. Same thing goes for Bow at the end, that was originaly a gif, with 3 persons, where i had to cut one person out, as well as cut the background, and do that for each frame. It was made to animate just once, on a certain scroll point, using intersection observer.',
 			},
 			{
 				id: `${nanoid()}`,
