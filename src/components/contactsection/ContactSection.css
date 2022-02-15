@@ -11,8 +11,8 @@
 }
 
 .icon {
-	font-size: 20px;
-	margin-left: 5px;
+	font-size: 30px;
+	margin-right: 8px;
 	padding: 2px;
 	color: black;
 }
@@ -24,6 +24,14 @@
 
 @media screen and (min-width: 1200px) {
 	.icon {
-		font-size: 25px;
+		font-size: 35px;
+		margin-right: 13px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.icon {
+		font-size: 35px;
+		margin-right: 30px;
 	}
 }
