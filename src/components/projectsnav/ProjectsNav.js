@@ -26,7 +26,6 @@ function ProjectsNav({
 		to: { height: !upDown ? "100vh" : "55vh" },
 		config: { duration: 500 },
 	});
-
 	const infoContainerApi = useSpringRef();
 	const infoContainer = useSpring({
 		ref: infoContainerApi,

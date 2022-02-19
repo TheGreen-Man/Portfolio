@@ -12,23 +12,26 @@ export default function WorkSection({ projects }) {
 	const [selectedProject, setSelectedProject] = useState("");
 	const [leftRightAnimation, setLeftRightAnimation] = useState(false);
 	const [upDownAnimation, setUpDownAnimation] = useState(false);
-
 	async function handleClick(e, id) {
 		e.preventDefault();
 		setLeftRightAnimation(true);
 		setUpDownAnimation(true);
-		await promiseTimer(1500);
-		setSelectedProject(id);
-		opener();
+		// await promiseTimer(1500);
+		setTimeout(() => {
+			setSelectedProject(id);
+			opener();
+		}, 1500);
 	}
 
 	async function handleClose(e) {
 		e.preventDefault();
 		setLeftRightAnimation(false);
 		setUpDownAnimation(false);
-		await promiseTimer(2000);
-		setSelectedProject("");
-		closer(selectedProject);
+		// await promiseTimer(2000);
+		setTimeout(() => {
+			setSelectedProject("");
+			closer(selectedProject);
+		}, 2000);
 	}
 
 	const leftContainerApi = useSpringRef();
@@ -70,13 +73,13 @@ export default function WorkSection({ projects }) {
 		/>
 	));
 
-	const spawnProjectsLi = projects.map((e) => (
+	const spawnProjectsLi = projects.map(({ title, id }) => (
 		<ProjectsList
-			title={e.title}
-			id={e.id}
-			selected={selectedProject === e.id}
+			title={title}
+			id={id}
+			selected={selectedProject === id}
 			openProject={selectedProject}
-			key={e.id + "plkey"}
+			key={id + "plkey"}
 			setUpDownAnimation={setUpDownAnimation}
 			setSelectedProject={setSelectedProject}
 		/>
@@ -91,7 +94,7 @@ export default function WorkSection({ projects }) {
 
 				<CreateNav />
 
-				{!upDownAnimation ? null : (
+				{upDownAnimation && (
 					<ExitButton onClick={handleClose} to={selectedProject} />
 				)}
 			</animated.div>

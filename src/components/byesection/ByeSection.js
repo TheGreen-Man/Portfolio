@@ -2,13 +2,12 @@ import React, { useState, useRef, useMemo, useEffect } from "react";
 import "./ByeSection.css";
 import animationArray from "../../frames/thankyou";
 
+const options = { root: null, rootMargin: "0px", threshold: 0.85 };
+
 export default function ByeSection() {
 	const [image, setImage] = useState(animationArray[0]);
 	const observedSection = useRef(null);
 
-	const options = useMemo(() => {
-		return { root: null, rootMargin: "0px", threshold: 0.85 };
-	}, []);
 	function animate(i) {
 		setTimeout(() => {
 			setImage(animationArray[i]);
@@ -26,7 +25,6 @@ export default function ByeSection() {
 		}, options);
 
 		observer.observe(observedSection.current);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

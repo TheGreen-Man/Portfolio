@@ -10,6 +10,13 @@
 	cursor: pointer;
 	z-index: 1;
 }
+/* .inner-one {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+
+	background: var(--clr-accent); */
+/* } */
 .circle::before,
 .circle::after {
 	content: "";
@@ -18,6 +25,7 @@
 	position: absolute;
 	left: 0;
 	border-radius: 25px 0 0 25px;
+
 	transform-origin: center right;
 	animation-iteration-count: 1;
 	animation-delay: 1s;
@@ -36,6 +44,19 @@
 	background-color: var(--clr-accent);
 	animation-name: rotate;
 	animation-timing-function: linear;
+}
+@keyframes rotate {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes mask {
+	50%,
+	100% {
+		background-color: var(--clr-accent);
+		transform: rotate(0.5turn);
+	}
 }
 
 .lines {
@@ -87,19 +108,6 @@
 	}
 }
 
-@keyframes rotate {
-	to {
-		transform: rotate(1turn);
-	}
-}
-
-@keyframes mask {
-	50%,
-	100% {
-		background-color: var(--clr-accent);
-		transform: rotate(0.5turn);
-	}
-}
 @keyframes appear {
 	0% {
 		opacity: 0;

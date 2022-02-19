@@ -22,7 +22,7 @@ export default function ContactSection() {
 					If you have any additional questions, or are just interested
 					in a colaboration, you are welcome to contact me!
 				</p>
-				<h3>Filip Crncevic</h3>
+				<h2 id="Filip">Filip Crncevic</h2>
 				<p>Front-End Developer</p>
 				<ContactForm />
 				<a

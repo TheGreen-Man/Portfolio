@@ -27,7 +27,7 @@ export default function ContactForm() {
 				<button type="submit" disabled={state.submitting}>
 					Submit
 				</button>
-				{state.succeeded ? ty : null}
+				{state.succeeded && ty}
 			</form>
 		</div>
 	);
