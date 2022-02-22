@@ -35,7 +35,7 @@ export default function AboutSection() {
 						least on the inside.
 					</p>
 
-					<h5>The idea that set everything in motion</h5>
+					<h4>The idea that set everything in motion</h4>
 
 					<p>
 						A couple of years later, life brought me to NCR. Working
@@ -44,7 +44,7 @@ export default function AboutSection() {
 						Machine" was born. More information about this project
 						will be in the project section below.
 					</p>
-					<h5>What the future holds</h5>
+					<h4>What the future holds</h4>
 					<p>
 						The feeling of creating something that was just an idea
 						a while ago is irreplaceable. It is something that

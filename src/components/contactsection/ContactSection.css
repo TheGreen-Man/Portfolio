@@ -13,6 +13,7 @@
 #Filip {
 	font-weight: var(--font-weight-bold);
 	color: var(--clr-accent);
+	font-size: var(--font-size-large);
 }
 
 .icon {

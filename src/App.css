@@ -2,13 +2,15 @@
 :root {
 	/* --clr-accent: #379683; */
 	/* --clr-accent: #09cde3; */
-	/* --clr-accent: #135494; */
-	/* --clr-accent: #45085e; */
-	/* --clr-accent: #066124; */
-	/* --clr-accent: #999400; */
-	--clr-accent: #990033;
+	--clr-accent: #9618e4;
+	/* --clr-accent: #cc0044; */
+	/* --clr-accent: #c20041; */
+	/* --clr-accent: #b3003c; */
+	/* --clr-accent: #990033; */
 
-	--clr-dark: #292929;
+	/* --clr-dark: #292929; */
+	--clr-dark: #171717;
+
 	--clr-light: white;
 
 	--font-weight-bold: 800;
@@ -21,10 +23,6 @@
 	--font-family-cursive: "Great Vibes";
 
 	--font-clr-gray: rgb(69, 69, 69);
-}
-
-#die {
-	display: none;
 }
 
 * {

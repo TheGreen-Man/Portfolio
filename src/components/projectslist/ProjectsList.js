@@ -20,8 +20,8 @@ export default function ProjectsList({
 			setUpDownAnimation(false);
 			await promiseTimer(2000);
 			setSelectedProject("");
-
 			closer(openProject);
+
 			await promiseTimer(50);
 			document.getElementById(id + "1").click();
 		}

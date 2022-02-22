@@ -24,11 +24,22 @@
 }
 
 .about-content h3,
-.about-content p,
-.about-content h4,
-.about-content h5 {
-	margin-bottom: 50px;
+.about-content h4 {
+	margin-bottom: 35px;
 }
+.about-content h4 {
+	margin-top: 50px;
+}
+
+.about-content p {
+	margin-bottom: 25px;
+}
+
+.about-content h3:last-child,
+.about-content h4:last-child {
+	margin-bottom: 45px;
+}
+
 .pre-goals {
 	line-height: 1.75em;
 	color: var(--font-clr-gray);

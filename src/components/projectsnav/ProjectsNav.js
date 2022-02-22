@@ -42,7 +42,7 @@ function ProjectsNav({
 	const nextButton = <NextButton onClick={handleNextButtonClick} />;
 	const hiddenContent = content.map((e) => contentCreator(e));
 	return (
-		<li id={shouldShow ? null : "die"}>
+		<li className={shouldShow ? null : "die"}>
 			<div className="project" id={id}>
 				<animated.div className="animated-div" style={imageContainer}>
 					<Link

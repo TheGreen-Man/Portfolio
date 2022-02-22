@@ -5,7 +5,7 @@ import ProjectsNav from "../projectsnav/ProjectsNav";
 import ProjectsList from "../projectslist/ProjectsList";
 import ExitButton from "../exitbutton/ExitButton";
 import { useSpring, animated, useSpringRef, useChain } from "react-spring";
-import promiseTimer from "../../utility/promiseTimer";
+// import promiseTimer from "../../utility/promiseTimer";
 import closer from "../../utility/closer";
 import opener from "../../utility/opener";
 export default function WorkSection({ projects }) {

@@ -5,7 +5,7 @@
 	margin: auto;
 	border-radius: 50%;
 	background-color: var(--clr-accent);
-	transition: all 1s ease-in;
+	transition: all 0.325s ease-in;
 
 	display: flex;
 	justify-content: center;
