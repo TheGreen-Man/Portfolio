@@ -18,9 +18,9 @@ export default function AboutSection() {
 						I am a junior front end developer from Belgrade, Serbia.
 					</h3>
 					<p>
-						In my professional experience I have tried several
-						different professions, but upon stumbling to web
-						development, I knew I was <em>hooked</em>.
+						In my employment history I have tried several different
+						professions, but upon stumbling to web development, I
+						knew I was <em>hooked</em>.
 					</p>
 					<h4>Start of a wonderful journey</h4>
 					<p>

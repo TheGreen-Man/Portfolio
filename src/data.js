@@ -112,19 +112,24 @@ const PROJECTS = [
 		background: portfolioBackground,
 		id: `${nanoid()}`,
 		content: [
+			// {
+			// 	id: `${nanoid()}`,
+			// 	element: "p",
+			// 	text: "This website is a definition of a junior project. Looking at the code, one can see a variety of different styles and approaches to everything, from problems to naming classes. Everything was left that way in order to show the process of learning.",
+			// },
+			// {
+			// 	id: `${nanoid()}`,
+			// 	element: "p",
+			// 	text: "It's made fully using React, and also some of the animations were done using the React Spring library, and others with regular CSS. This was done in order of testing different ways and seeing how they work.",
+			// },
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "This website is a definition of a junior project. Looking at the code, one can see a variety of different styles and approaches to everything, from problems to naming classes. Everything was left that way in order to show the process of learning.",
+				text: "This website is my first bigger project, combining all my knowledge of HTML, CSS and js. It's made using React, and some of the animations were done using React Spring library.",
 			},
 			{
 				id: `${nanoid()}`,
-				element: "p",
-				text: "It's made fully using React, and also some of the animations were done using the React Spring library, and others with regular CSS. This was done in order of testing different ways and seeing how they work.",
-			},
-			{
-				id: `${nanoid()}`,
-				element: "h3",
+				element: "h4",
 				text: "Let's talk about some of the problems that this website brought with it.",
 			},
 			{
@@ -145,12 +150,17 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: '"Welcome" that appears when you first load the page was made in figma, and this is my first encounter with that app, so a lot of googling was done to create it. Same thing goes for Bow at the end, that was originaly a gif, with 3 persons, where i had to cut one person out, as well as cut the background, and do that for each frame. It was made to animate just once, on a certain scroll point, using intersection observer.',
+				text: '"Welcome" at the first section, and bow person at the last were both made using Figma. That was my first encounter with the app, and a lot of googling and trial and error was done in order of creating that.',
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "After all of the frustrations, ups and downs, this was still really a lot of fun. Merging everything together and being limited only by lack of knowledge is a a force that is already filling my head with ideas for the next project.",
+				text: "Bow animation at the end, that needs to run only once was done using intersection observer",
+			},
+			{
+				id: `${nanoid()}`,
+				element: "p",
+				text: "After all of the frustrations, ups and downs, this was still really a lot of fun. Merging everything together and being limited only by lack of knowledge is a force that is already filling my head with ideas for the next project.",
 			},
 		],
 	},
@@ -164,17 +174,17 @@ const PROJECTS = [
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "This is just an idea at the moment. It is going to be a regular eCommerce website. My goal with this one is to make a fully operational website, ready to be used by a business owner. It should have everything like other website have, log in, admin privileges, basket, purchase option, maybe even a small database for articles.",
+				text: "This one is still just an idea. Main focus here is going to be getting familiar with new web technologies.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "It will also be made fully with react, but the main difference with portfolio is going to be the addition of TypeScript, as well as one of the CSS frameworks (probably tailwind) or maybe just Sass. Since the goal will be to make an production use website, there will also be a focus on accessability.",
+				text: "My goal is to make fully operational website, that is going to have authentication, user privilege management (basic user vs admin), payment processing and a database for the articles.",
 			},
 			{
 				id: `${nanoid()}`,
 				element: "p",
-				text: "If you're reading this that probably means i have already started working on this website, and you can watch my progress on my github, where i will try to upload as often as i can.",
+				text: "Some of the main differences between this portfolio and the eComm website are going to be the addition of TypeScript, Sass and accessibility friendly.",
 			},
 		],
 	},

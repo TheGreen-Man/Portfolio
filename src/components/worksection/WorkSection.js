@@ -5,7 +5,7 @@ import ProjectsNav from "../projectsnav/ProjectsNav";
 import ProjectsList from "../projectslist/ProjectsList";
 import ExitButton from "../exitbutton/ExitButton";
 import { useSpring, animated, useSpringRef, useChain } from "react-spring";
-// import promiseTimer from "../../utility/promiseTimer";
+import promiseTimer from "../../utility/promiseTimer";
 import closer from "../../utility/closer";
 import opener from "../../utility/opener";
 export default function WorkSection({ projects }) {
@@ -16,22 +16,18 @@ export default function WorkSection({ projects }) {
 		e.preventDefault();
 		setLeftRightAnimation(true);
 		setUpDownAnimation(true);
-		// await promiseTimer(1500);
-		setTimeout(() => {
-			setSelectedProject(id);
-			opener();
-		}, 1500);
+		await promiseTimer(1500);
+		setSelectedProject(id);
+		opener();
 	}
 
 	async function handleClose(e) {
 		e.preventDefault();
 		setLeftRightAnimation(false);
 		setUpDownAnimation(false);
-		// await promiseTimer(2000);
-		setTimeout(() => {
-			setSelectedProject("");
-			closer(selectedProject);
-		}, 2000);
+		await promiseTimer(2000);
+		setSelectedProject("");
+		closer(selectedProject);
 	}
 
 	const leftContainerApi = useSpringRef();
