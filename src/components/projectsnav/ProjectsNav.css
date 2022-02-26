@@ -96,10 +96,10 @@
 }
 
 .project-content p {
-	padding: 20px 72px 36px 92px;
+	padding: 0px 72px 0px 92px;
+	margin: 20px auto 36px auto;
 	line-height: 1.3em;
 	display: block;
-	margin: 0 auto;
 	text-align: left;
 }
 
@@ -118,7 +118,7 @@
 .project-content h1,
 .project-content h2,
 .project-content h3 {
-	padding: 10px 72px 20px 72px;
+	margin: 10px 72px 20px 72px;
 }
 
 .expanded .project-ul .project-image {
