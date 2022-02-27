@@ -30,9 +30,9 @@ export default function AboutSection() {
 					</p>
 					<p>
 						Having zero knowledge in HTML & CSS, it was made fairly
-						simple, but yet it was filled with hidden links, jokes
-						and wacky images that made anyone who visited laugh, at
-						least on the inside.
+						simple, yet it was filled with hidden links, jokes and
+						wacky images that appear on hover. making anyone who
+						visited laugh, at least on the inside.
 					</p>
 
 					<h4>The idea that set everything in motion</h4>
@@ -67,9 +67,9 @@ export default function AboutSection() {
 						/>
 						<div className="peace-text">
 							<p>
-								As a self taught, I enjoy working alone, but I
-								strongly believe in teamwork in order of
-								achieving greatness.
+								As a self taught developer, I enjoy working
+								alone, but I strongly believe in teamwork in
+								order of achieving greatness.
 							</p>
 						</div>
 					</div>

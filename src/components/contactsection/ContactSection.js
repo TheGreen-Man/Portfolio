@@ -42,7 +42,7 @@ export default function ContactSection() {
 				<a href="mailto:crncevicf@gmail.com?subject=Hello!">
 					<FaRegEnvelopeOpen className="icon" />
 				</a>
-				<a href="../../frames/Crncevic_CV.pdf" download>
+				<a href="http://filipcrncevic.rocks/Crncevic_CV.pdf" download>
 					<FaRegFilePdf className="icon" />
 				</a>
 			</div>

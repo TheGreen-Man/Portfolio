@@ -1,16 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo&family=Great+Vibes&display=swap");
 :root {
-	/* --clr-accent: #379683; */
-	/* --clr-accent: #09cde3; */
 	--clr-accent: #9618e4;
-	/* --clr-accent: #cc0044; */
-	/* --clr-accent: #c20041; */
-	/* --clr-accent: #b3003c; */
-	/* --clr-accent: #990033; */
-
-	/* --clr-dark: #292929; */
 	--clr-dark: #171717;
-
 	--clr-light: white;
 
 	--font-weight-bold: 800;

@@ -23,11 +23,11 @@ const PROJECTS = [
 			},
 			{
 				element: "p",
-				text: "Working in NCR I have noticed that many of the things are repeating themselfes when handleing tickets. Simple copy/paste from dozens of sticky notes wasn't going to cut it. Auto Hotkey script was a step in the right direction, but after learning some basics of JS, I knew I wanted more.",
+				text: "Working at NCR I have noticed that many of the things are repeating themselves when handling tickets. Simple copy/paste from dozens of sticky notes wasn't going to cut it. Auto Hotkey script was a step in the right direction, but after learning some basics of JS, I knew I wanted more.",
 			},
 			{
 				element: "p",
-				text: "This plugin mounts itself on Neos (NCR's ticket handling website) navbar logo, disabling the main function, redirection to home page, and making so much more.",
+				text: "This plugin mounts itself on Neos (NCR's ticket handling website) navbar logo, disabling main function, redirection to the home page, and making so much more.",
 			},
 
 			{
@@ -38,31 +38,31 @@ const PROJECTS = [
 
 			{
 				element: "p",
-				text: "Clicking on the logo will create a dropdown menu. First couple of clicks are waited for the user to select proper type/model/issue. There are also additional fields marked with stars, wich help user in gathering information quicker, preparing register ID, and of course there is a back button in case of missclick.",
+				text: "First couple of clicks are selection of proper type/model/issue. There are also additional fields marked with stars, which help user in gathering information quicker, preparing register ID, and of course there is a back button in case of missclick.",
 			},
 			{
 				element: "img",
 				src: selection,
-				alt: "Dropdown menu, from the Machine, 'selection' options",
+				alt: "Drop-down menu, 'selection' options",
 			},
 			{
 				element: "p",
-				text: "After the selection has been completed, real work starts. It will now write, change, post, and do so much more. After every action, it will stop and wait for user to click again to continue. Sometimes user input is needed between some actions, sometimes not. This also works as a safety net.",
+				text: "After selection has been completed, the real work starts. It will now write, change, post, and do so much more. After every action, it will stop and wait for user to click again to continue. Sometimes user input is needed between some actions, sometimes not. This also works as a safety net.",
 			},
 			{
 				element: "img",
 				src: work,
-				alt: "Dropdown menu, 'work' options",
+				alt: "Drop-down menu, 'work' options",
 			},
 
 			{
 				element: "p",
-				text: "Neos does some things, on its own, like changing product/model info on certain issues to incorrect one. This doesn't happen for all issues, and people remember on which issue they need to rewrite the info, but even the best sometimes forget and the whole process takes couple of times longer then it should. That is exactly one of the things that this plugin helps avoid. It allows users to focus on quality of work, without needing to remember unneccasary information.",
+				text: "Neos does some things, on its own, like changing product/model info on certain issues with incorrect one. This doesn't happen for all issues, and people remember on which issue they need to rewrite the info, but even the best sometimes forget and the whole process takes a couple of times longer then it should. That is exactly one of the things that this plugin helps avoid. It allows users to focus on quality of work, without needing to remember unnecessary information.",
 			},
 
 			{
 				element: "p",
-				text: "One other way this plugin boosts efficiency is removing the need for the user to use multiple programs in order of getting issueID as well as issue description. It has a 'database' of it's own. Also, since each description is sort of unique, it needs to have a register number in it, this plugin does that as well, using ReGeX!",
+				text: "One other way this plugin boosts efficiency is removing the need for the user to use multiple programs in order of getting issueID as well as issue description. It has a 'database' of its own. Also, since each description is sort of unique, it needs to have a register number in it, this plugin does that as well, using ReGeX!",
 			},
 
 			{
@@ -72,7 +72,7 @@ const PROJECTS = [
 
 			{
 				element: "p",
-				text: "Interesting yet practical project, ironically named MakeNeosGreatAgain!, helping me with not only learning JS, but improving the quallity and efficiency of my work.",
+				text: "Interesting yet practical, ironically called MakeNeosGreatAgain! project, helped me with not only learning JS, but improving the quality and efficiency of my work.",
 			},
 		],
 	},
@@ -84,7 +84,7 @@ const PROJECTS = [
 		content: [
 			{
 				element: "p",
-				text: "This website is my first bigger project, combining all my knowledge of HTML, CSS and js. It's made using React, and some of the animations were done using React Spring library.",
+				text: "This website is my first bigger project, combining all my knowledge of HTML, CSS and JS. It's made using React, and some of the animations were done using React Spring library.",
 			},
 			{
 				element: "h4",
@@ -96,11 +96,11 @@ const PROJECTS = [
 			},
 			{
 				element: "p",
-				text: "Async/Await was my last resort in combating this problem, and let me be completely honest, it was used in a cavemans way, but it worked!",
+				text: "Async/Await was my last resort in combating this problem, and let me be completely honest, it was used in a caveman's way, but it worked!",
 			},
 			{
 				element: "p",
-				text: '"Welcome" at the first section, and bow person at the last were both made using Figma. That was my first encounter with the app, and a lot of googling and trial and error was done in order of creating that.',
+				text: '"Welcome" at the first section, and bow person at the last were both made using Figma. That was my first encounter with the app, and a lot of googling and trial and error was made in order of creating that.',
 			},
 			{
 				element: "p",
@@ -132,7 +132,7 @@ const PROJECTS = [
 			},
 			{
 				element: "p",
-				text: "I'm looking forward in creating this website, and all of the surprises encounters with new web technologies will bring!",
+				text: "I'm looking forwardn in creating this website, and encountering all of the surprises it will bring!",
 			},
 		],
 	},
