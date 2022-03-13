@@ -27,6 +27,14 @@
 	width: 42%;
 	height: 42%;
 }
+
+@media screen and (max-width: 980px) {
+	#svg-animation {
+		width: 80%;
+		height: 80%;
+	}
+}
+
 .stroke_accent {
 	stroke: var(--clr-accent);
 }

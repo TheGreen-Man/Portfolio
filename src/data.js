@@ -128,11 +128,15 @@ const PROJECTS = [
 			},
 			{
 				element: "p",
-				text: "Some of the main differences between this portfolio and the eComm website are going to be the addition of TypeScript, Sass and accessibility friendly.",
+				text: "Some of the main differences between this portfolio and the eComm website are going to be the addition of TypeScript, Redux, Sass and accessibility friendly.",
 			},
 			{
 				element: "p",
-				text: "I'm looking forwardn in creating this website, and encountering all of the surprises it will bring!",
+				text: "Before this project I will first do a smaller one as an introduction to TS and Redux. Code is going to be available on GitHub.",
+			},
+			{
+				element: "p",
+				text: "I'm looking forward in creating eComm website, and encountering all of the surprises it will bring!",
 			},
 		],
 	},

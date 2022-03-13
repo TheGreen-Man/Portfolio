@@ -3,6 +3,11 @@
 	overflow-y: hidden;
 	min-height: 100vh;
 }
+@media screen and (max-width: 500px) {
+	.contact-r {
+		padding: 70px 48px;
+	}
+}
 
 .contact-r p,
 .contact-r h3,
@@ -39,5 +44,11 @@
 	.icon {
 		font-size: 35px;
 		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.icon {
+		margin-right: 20px;
 	}
 }
