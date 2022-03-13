@@ -114,6 +114,16 @@
 		max-width: 85ch;
 	}
 }
+@media screen and (max-width: 500px) {
+	.project-content p {
+		padding: 0px 48px 0px 58px !important;
+	}
+	.project-content h1,
+	.project-content h2,
+	.project-content h3 {
+		margin: 10px 48px 20px 58px !important;
+	}
+}
 
 .project-content h1,
 .project-content h2,

@@ -20,7 +20,7 @@
 }
 @media screen and (max-width: 500px) {
 	.about-content {
-		padding: 48px;
+		padding: 48px !important;
 	}
 }
 
